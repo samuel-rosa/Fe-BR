@@ -27,8 +27,8 @@ Nossos modelos de planilha eletrônica para organização dos dados foram constr
 internacionais usados pelo World Soil Information Service ([WoSIS](http://www.isric.org/data/wosis)). Versões 
 para usuários de LibreOffice (formato ODS) e Microsoft Office (formato XLS) podem ser descarregadas de:
 
-* https://github.com/samuel-rosa/Fe-BR/templates
-
+* LibreOffice: https://github.com/samuel-rosa/Fe-BR/raw/master/templates/template.ods
+* Microsoft Office: https://github.com/samuel-rosa/Fe-BR/raw/master/templates/template.xls
 
 ## Com Que Tipo de Dados Você Quer Contribuir?
 
