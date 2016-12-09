@@ -1,4 +1,4 @@
-output_dir: "doc"
+output_dir: "docs"
 output:
   html_document:
     highlight: tango
