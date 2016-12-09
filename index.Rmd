@@ -1,0 +1,42 @@
+---
+title: "Fe-BR: Base de Dados Brasileira de Ferro do Solo"
+---
+
+Apresentação
+=================================
+
+Junte-se a nós num ***esforço colaborativo inédito*** da comunidade de cientistas do solo brasileira. O 
+***objetivo***: construir uma base de dados de ferro do solo centralizada, pública e gratuita, com cobertura 
+nacional.
+
+Nós acreditamos que o uso sustentável do solo para aplicações ambientais no Brasil exige o conhecimento 
+preciso e acurado da distribuição horizontal e vertical do teor de ferro do solo. Por quê? Porque, em alguns
+locais, ***os óxidos de ferro podem perfazer até 80% da massa do solo***! Os óxidos de ferro são bem 
+conhecidos por sua forte interação com a matéria orgânica do solo, influenciando assim a quantidade de carbono 
+que o solo consegue armazenar de forma estável. Os óxidos de ferro também são bem conhecidos pela sua forte 
+afinidade com íons fosfato, determinando assim a disponibilidade de fósforo para as plantas. A intrincada 
+relação entre fósforo e matéria orgânica reforça a necessidade do conhecimento da variação tridimensional do 
+teor de ferro do solo em todo o território brasileiro. Tal conhecimento poderia ajudar, por exemplo, na 
+melhoria dos sistemas de classificação do solo, no desenvolvimento de sistemas avançados de recomendação que 
+assegurem o uso mais eficiente de fertilizantes fosfatados, e na construção de políticas públicas de uso e 
+ocupação do solo que respeitem as reais capacidades desse precioso e não-renovável bem natural.
+
+## Como participar?
+
+***Participar é muito fácil!*** Você só precisa [CONTRIBUIR](contribute.html) com quaisquer dados de conteúdo
+de ferro do solo que sejam fruto de suas atividades, seja qual for o método analítico usado, a forma e 
+profundidade de amostragem, ou a localização geográfica das amostras analisadas.
+
+## O que você ganha com isso?
+
+Acredite, você tem muito a ganhar! Além da satisfação de colaborar com a comunidade científica e valorizar os 
+dados produzidos em suas atividades, você terá a chance de usar uma base de dados harmonizados, com milhares 
+de registros, para exercitar sua criatividade científica. Você também estará colaborando com o Plano de Ação 
+da Infraestrutura Nacional de Dados Espaciais ([INDE](http://www.inde.gov.br/a-inde/apresentacao.html)). 
+***Mas não é só isso!*** Caso sua contribuição esteja entre as quatro maiores, você será agraciado com a
+coautoria de um artigo a ser submetido para publicação na revista 
+[Earth System Science Data](http://earth-system-science-data.net/) (Fator de Impacto 
+de 8,268). ***Quer mais?*** Seu nome citado na página do projeto o deixará famoso. E talvez você ainda ganhe
+prêmios...
+
+Estamos contando com sua contribuição!  
