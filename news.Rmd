@@ -5,5 +5,5 @@ title: "Fe-BR: Base de Dados Brasileira de Ferro do Solo"
 Notícias
 =================================
 
-***Você quer virar notícia?*** Contribua dados de conteúdo de ferro do solo que
+***Você quer virar notícia?*** Contribua com dados de conteúdo de ferro do solo que
 sejam fruto de suas atividades!
