@@ -30,12 +30,17 @@ para usuários de LibreOffice (formato ODS) e Microsoft Office (formato XLS) pod
 * LibreOffice: https://github.com/samuel-rosa/Fe-BR/raw/master/templates/template.ods
 * Microsoft Office: https://github.com/samuel-rosa/Fe-BR/raw/master/templates/template.xls
 
-## Com Que Tipo de Dados Você Quer Contribuir?
+<!-- ## Método Analítico -->
 
-[perfis](#perfis)
 
-[amostras individuais](#amostras)
+<!-- ## Origem dos Dados -->
 
-## Dados de Perfis do Solo {#perfis}
+<!-- [perfis](#perfis) -->
 
-## Dados de Amostras Individuais {#amostras}
+<!-- [amostras individuais](#amostras) -->
+
+<!-- ## Dados de Perfis do Solo {#perfis} -->
+
+<!-- ## Dados de Amostras Individuais {#amostras} -->
+
+
