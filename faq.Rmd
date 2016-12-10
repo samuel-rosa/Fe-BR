@@ -1,0 +1,85 @@
+---
+title: "Fe-BR: Base de Dados Brasileira de Ferro do Solo"
+---
+
+FAQ
+=================================
+
+## Posso submeter dados de um perfil sem coordenadas geográficas?
+
+Sim, você pode. Contudo, recomendamos que você faça um esforço para conseguir alguma estimativa das 
+coordenadas geográficas. Uma alternativa eficiente é o [Google Maps](https://www.google.com.br/maps/). Com o 
+Google Maps você obtém coordenadas geográficas no formato latitude/longitude em graus. Nesse caso, você pode
+usar as seguintes definições na aba `profile`:
+
+* `coordinat_system`: `WGS 84, EPSG:4326`
+* `gps_accuracy`: `6`
+* `accuracy_type`: `MAPA`
+
+## E se eu não souber a localização aproximada do perfil?
+
+Você pode informar o nome do município (`city_name`) e do estado brasileiro (`state_id`) onde o perfil foi
+observado e amostrado. Contudo, nós recomendamos que você informe, pelo menos, uma estimativa grosseira das
+coordenadas geográficas. Por exemplo, talvez você saiba que o perfil foi observado ao norte da sede do
+município, dentro de uma área com raio de aproximadamente 10.000 m. Nesse caso, você pode definir a variável
+`gps_accuracy: 10.000`.
+
+## Posso submeter dados de parcelas experimentais?
+
+Sim, você pode. Qualquer tipo de dado de conteúdo de ferro do solo pode ser submetido.
+
+## E se os dados das parcelas experimentais não forem georeferenciados?
+
+Você pode submeter os dados mesmo sem coordenadas geográficas e informando apenas o nome do município
+(`city_name`) e do estado brasileiro (`state_id`) onde as parcelas experimentais estiverem localizadas. 
+Contudo, recomendamos que você use o [Google Maps](https://www.google.com.br/maps/) para obter uma 
+estimativa das coordenadas geográficas conforme descrito acima.
+
+Como os dados de parcelas experimentais geralmente são obtidos via amostragem composta 
+(`sample_type`: `COMPOSTA`), você pode informar as coordenadas geográficas referentes ao centro de cada 
+parcela experimental. Nesse caso, você pode informar o tamanho da parcela experimental em `sample_area`.
+
+## Não sei a localização exata de cada parcela experimental. O que devo fazer?
+
+Nesse caso você pode usar, para cada parcela experimental, as mesmas coordenadas geográficas referentes ao
+centro da área experimental estimadas usando o [Google Maps](https://www.google.com.br/maps/). O erro 
+posicional pode ser definido como sendo igual ao raio da área experimental, valor esse informado à variável
+`gps_accuracy`.
+
+## Tenho dados de voçorocas. Posso submetê-los?
+
+Sim, você pode. Qualquer tipo de dado de conteúdo de ferro do solo pode ser submetido, independente do
+objeto de estudo. Nesse caso, a atribuição de coordenadas geográficas -- caso não estejam disponíveis -- 
+pode seguir as mesmas recomendações feitas acima para o caso das parcelas experimentais.
+
+## Possso submeter dados do projeto RADAM BRASIL e similares?
+
+Não, você não pode. Os dados do projeto RADAM BRASIL e similares já estão em domínio público, tendo sido quase
+completamente incluídos nas bases de dados das instituições responsáveis como EMBRAPA e IBGE. O acesso a essas
+bases de dados será feita diretamente pela equipe do projeto. A exceção são os casos em que for comprovado 
+que um determinado conjunto de dados ainda não está disponível nessas bases de dados.
+
+## Posso submeter dados com qualquer tipo de licença de uso?
+
+Não, você não pode. Somente são aceitas licenças não-restritivas, que permitem a redistribuição, modificação, 
+adaptação e criação a partir do conjunto de dado submetido, e que não obrigam o licenciamento dos trabalhos
+derivados sob os mesmos termos.
+
+Contudo, você tem reservado o direito de decidir se os produtos derivados podem ou não ter fins comerciais. 
+Além disso, todos os novos trabalhos derivados do conjunto de dados submetido devem atribuir o devido crédito
+ao autor da criação original.
+
+As licenças [Creative Commons](https://br.creativecommons.org/licencas/) CC BY (Atribuição) e CC BY-NC 
+(Atribuição Não-Comercial) se enquadram nessas definições.
+
+## O que será feito com os dados submetidos?
+
+O primeiro passo será a sua padronização, ou seja, juntar os diferentes conjuntos de dados submetidos, usando
+os mesmos códigos de identificação -- conforme definido pelo método analítico -- e as mesmas unidades de 
+medida. Em seguida os dados serão harmonizados, isto é, transformados para a mesma escala como se tivessem 
+sido obtidos usando o mesmo método analítico. Essa transformação será feita usando modelos de regressão linear
+calibrados com os dados padronizados.
+
+Uma vez padronizados e harmonizados, os dados serão servidos gratuitamente, sob a licença não-restritiva 
+definida na fonte, para uso pela comunidade científica. Esse uso posterior incluirá a espacialização do
+conteúdo de ferro do solo em todo o território nacional.

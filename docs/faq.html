@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<title>Fe-BR: Base de Dados Brasileira de Ferro do Solo</title>
+
+
+
+
+
+
+<link rel="stylesheet" href="css/reset.css" type="text/css" />
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+
+</head>
+
+<body>
+
+
+
+<div id="header">
+<div id="content">
+<div id="nav">
+<div id="logo"><a href="./">Fe-BR</a></div>
+
+<ul id="navLeft">
+<li class="navItem"><a href="index.html">Apresentação</a></li>
+<li class="navItem"><a href="contribute.html"><b>CONTRIBUIR</b></a></li>
+<li class="navItem"><a href="news.html">Notícias</a></li>
+<li class="navItem"><a href="faq.html">FAQ</a></li>
+<li class="navItem"><a href="about.html">Equipe</a></li>
+<li class="navItem"><a href="contact.html">Contato</a></li>
+</ul>
+
+<div>
+Base de Dados Brasileira de Ferro do Solo
+</div>
+  
+</div>
+</div>
+</div>
+
+<div id="main">
+<div id="content">
+
+
+<h1 class="title toc-ignore">Fe-BR: Base de Dados Brasileira de Ferro do Solo</h1>
+
+
+
+<div id="faq" class="section level1">
+<h1>FAQ</h1>
+<div id="posso-submeter-dados-de-um-perfil-sem-coordenadas-geograficas" class="section level2">
+<h2>Posso submeter dados de um perfil sem coordenadas geográficas?</h2>
+<p>Sim, você pode. Contudo, recomendamos que você faça um esforço para conseguir alguma estimativa das coordenadas geográficas. Uma alternativa eficiente é o <a href="https://www.google.com.br/maps/">Google Maps</a>. Com o Google Maps você obtém coordenadas geográficas no formato latitude/longitude em graus. Nesse caso, você pode usar as seguintes definições na aba <code>profile</code>:</p>
+<ul>
+<li><code>coordinat_system</code>: <code>WGS 84, EPSG:4326</code></li>
+<li><code>gps_accuracy</code>: <code>6</code></li>
+<li><code>accuracy_type</code>: <code>MAPA</code></li>
+</ul>
+</div>
+<div id="e-se-eu-nao-souber-a-localizacao-aproximada-do-perfil" class="section level2">
+<h2>E se eu não souber a localização aproximada do perfil?</h2>
+<p>Você pode informar o nome do município (<code>city_name</code>) e do estado brasileiro (<code>state_id</code>) onde o perfil foi observado e amostrado. Contudo, nós recomendamos que você informe, pelo menos, uma estimativa grosseira das coordenadas geográficas. Por exemplo, talvez você saiba que o perfil foi observado ao norte da sede do município, dentro de uma área com raio de aproximadamente 10.000 m. Nesse caso, você pode definir a variável <code>gps_accuracy: 10.000</code>.</p>
+</div>
+<div id="posso-submeter-dados-de-parcelas-experimentais" class="section level2">
+<h2>Posso submeter dados de parcelas experimentais?</h2>
+<p>Sim, você pode. Qualquer tipo de dado de conteúdo de ferro do solo pode ser submetido.</p>
+</div>
+<div id="e-se-os-dados-das-parcelas-experimentais-nao-forem-georeferenciados" class="section level2">
+<h2>E se os dados das parcelas experimentais não forem georeferenciados?</h2>
+<p>Você pode submeter os dados mesmo sem coordenadas geográficas e informando apenas o nome do município (<code>city_name</code>) e do estado brasileiro (<code>state_id</code>) onde as parcelas experimentais estiverem localizadas. Contudo, recomendamos que você use o <a href="https://www.google.com.br/maps/">Google Maps</a> para obter uma estimativa das coordenadas geográficas conforme descrito acima.</p>
+<p>Como os dados de parcelas experimentais geralmente são obtidos via amostragem composta (<code>sample_type</code>: <code>COMPOSTA</code>), você pode informar as coordenadas geográficas referentes ao centro de cada parcela experimental. Nesse caso, você pode informar o tamanho da parcela experimental em <code>sample_area</code>.</p>
+</div>
+<div id="nao-sei-a-localizacao-exata-de-cada-parcela-experimental.-o-que-devo-fazer" class="section level2">
+<h2>Não sei a localização exata de cada parcela experimental. O que devo fazer?</h2>
+<p>Nesse caso você pode usar, para cada parcela experimental, as mesmas coordenadas geográficas referentes ao centro da área experimental estimadas usando o <a href="https://www.google.com.br/maps/">Google Maps</a>. O erro posicional pode ser definido como sendo igual ao raio da área experimental, valor esse informado à variável <code>gps_accuracy</code>.</p>
+</div>
+<div id="tenho-dados-de-vocorocas.-posso-submete-los" class="section level2">
+<h2>Tenho dados de voçorocas. Posso submetê-los?</h2>
+<p>Sim, você pode. Qualquer tipo de dado de conteúdo de ferro do solo pode ser submetido, independente do objeto de estudo. Nesse caso, a atribuição de coordenadas geográficas – caso não estejam disponíveis – pode seguir as mesmas recomendações feitas acima para o caso das parcelas experimentais.</p>
+</div>
+<div id="possso-submeter-dados-do-projeto-radam-brasil-e-similares" class="section level2">
+<h2>Possso submeter dados do projeto RADAM BRASIL e similares?</h2>
+<p>Não, você não pode. Os dados do projeto RADAM BRASIL e similares já estão em domínio público, tendo sido quase completamente incluídos nas bases de dados das instituições responsáveis como EMBRAPA e IBGE. O acesso a essas bases de dados será feita diretamente pela equipe do projeto. A exceção são os casos em que for comprovado que um determinado conjunto de dados ainda não está disponível nessas bases de dados.</p>
+</div>
+<div id="posso-submeter-dados-com-qualquer-tipo-de-licenca-de-uso" class="section level2">
+<h2>Posso submeter dados com qualquer tipo de licença de uso?</h2>
+<p>Não, você não pode. Somente são aceitas licenças não-restritivas, que permitem a redistribuição, modificação, adaptação e criação a partir do conjunto de dado submetido, e que não obrigam o licenciamento dos trabalhos derivados sob os mesmos termos.</p>
+<p>Contudo, você tem reservado o direito de decidir se os produtos derivados podem ou não ter fins comerciais. Além disso, todos os novos trabalhos derivados do conjunto de dados submetido devem atribuir o devido crédito ao autor da criação original.</p>
+<p>As licenças <a href="https://br.creativecommons.org/licencas/">Creative Commons</a> CC BY (Atribuição) e CC BY-NC (Atribuição Não-Comercial) se enquadram nessas definições.</p>
+</div>
+<div id="o-que-sera-feito-com-os-dados-submetidos" class="section level2">
+<h2>O que será feito com os dados submetidos?</h2>
+<p>O primeiro passo será a sua padronização, ou seja, juntar os diferentes conjuntos de dados submetidos, usando os mesmos códigos de identificação – conforme definido pelo método analítico – e as mesmas unidades de medida. Em seguida os dados serão harmonizados, isto é, transformados para a mesma escala como se tivessem sido obtidos usando o mesmo método analítico. Essa transformação será feita usando modelos de regressão linear calibrados com os dados padronizados.</p>
+<p>Uma vez padronizados e harmonizados, os dados serão servidos gratuitamente, sob a licença não-restritiva definida na fonte, para uso pela comunidade científica. Esse uso posterior incluirá a espacialização do conteúdo de ferro do solo em todo o território nacional.</p>
+</div>
+</div>
+
+</div>
+</div>
+
+<div id="footer">
+<div id="content">
+
+<!--
+<div id="social">
+<a href="https://twitter.com/rstudio"><div class="socialIcon twitter"></div></a>
+<a href="https://github.com/rstudio"><div class="socialIcon gitHub"></div></a>
+<a href="https://www.linkedin.com/company/rstudio-inc"><div class="socialIcon linkedIn"></div></a>
+<a href="https://www.facebook.com/pages/RStudio-Inc/267733656584415"><div class="socialIcon facebook"></div></a>
+</div>
+-->
+
+<div id="finePrint">
+  Este site foi inspirado no site do pacote <a href="https://bookdown.org/">bookdown</a> criado pelo 
+  <a href="https://www.rstudio.com">RStudio Inc.</a>. 
+  Acesso o código fonte no <a href="https://github.com/samuel-rosa/Fe-BR">GitHub</a>.
+</div>
+
+</div>
+</div>
+
+<!--
+<script src="js/jquery-1.12.2.min.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+  menuAnchor.parent().addClass('current');
+
+  // now transform anchor urls so they work on bookdown.org
+  if (window.location.hostname == "bookdown.org") {
+    var pageAnchors = $('li.navItem a');
+    pageAnchors.each(function() {
+      var href = $(this).attr('href');
+      if (/^https?:\/\//.test(href)) return;
+      href = "/home/" + href;
+      $(this).attr('href', href);
+    });
+  }
+
+  // bigNumber
+  var numberClasses = ["color1", "color2", "color3"];
+  var bigNumber = $('.section.bigNumber');
+  bigNumber.each(function(index) {
+    $(this).removeClass('bigNumber');
+    var span = $('<span class="bigNumber"></span>');
+    span.text(index + 1);
+    for (var i = 0; i<numberClasses.length; i++) {
+      var numberClass = numberClasses[i];
+      if ($(this).hasClass(numberClass)) {
+        $(this).removeClass(numberClass);
+        span.addClass(numberClass);
+        break;
+      }
+    }
+    var h2 = $(this).children('h2');
+    h2.prepend(span);
+  });
+
+  // munge url
+  (function() {
+  var loc = window.top.location, his = window.top.history;
+  if (loc.protocol === 'https:' && loc.pathname !== '/' && his.replaceState)
+    his.replaceState({}, '', '/');
+  })();
+});
+
+</script>
+-->
+
+
+
+</body>
+</html>
