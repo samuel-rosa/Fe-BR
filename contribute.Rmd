@@ -17,9 +17,10 @@ que o seu (e o nosso) tempo seja gasto de maneira racional.
 Os dados podem ser submetidos de várias maneiras:
 
 * Caso os dados estejam no formato analógico (relatórios, dissertações e teses), pedimos que você faça a sua
-  digitalização usando o nosso modelo de planilha eletrônica que contém nomes padronizados para as variáveis.
+  digitalização usando o nosso modelo de planilha eletrônica que contém nomes padronizados para as variáveis
+  (veja abaixo).
 * Se os dados já estiverem no formato digital e o número de registros for pequeno (< 1000 registros), pedimos
-  que os mesmos sejam organizados usando também o nosso modelo de planilha eletrônica.
+  que os mesmos sejam organizados usando também o nosso modelo de planilha eletrônica (veja abaixo).
 * Mas se você tiver um volume muito grande de dados (> 1000 registros) já no formato digital, envie-nos uma 
   mensagem para estudarmos a forma mais apropriada para o sua submissão.
 
@@ -30,8 +31,58 @@ para usuários de LibreOffice (formato ODS) e Microsoft Office (formato XLS) pod
 * LibreOffice: https://github.com/samuel-rosa/Fe-BR/raw/master/templates/template.ods
 * Microsoft Office: https://github.com/samuel-rosa/Fe-BR/raw/master/templates/template.xls
 
-<!-- ## Método Analítico -->
+Cada planilha possui cinco abas (com nomes em inglês):
 
+* `README`: Aqui você encontra informações gerais sobre o preenchimento das demais abas.
+* `dataset`: Nesta aba você inclui as informações necessárias à identificação do conjunto de dados. São 18 os
+  campos a ser preenchidos, mas você tem liberdade para acrescentar informações onde indicado pelo símbolo 
+  `(...)`. Essas informações são necessárias para garantir a apropriada citação do conjunto de dados no 
+  futuro.
+* `metadata`: Aqui você encontra a definição e descrição dos campos a ser preenchidos nas abas `profile` e
+  `horizon`.
+* `profile`: Aqui você fornece informações sobre os perfis ou pontos de observação e amostragem do solo, tais
+  como as coordenadas geográficas, a data de amostragem e a classificação do solo. Note que o termo `profile`
+  é usado aqui fazendo referência à qualquer tipo de observação e amostragem do solo, seja um perfil 
+  propriamente dito ou uma tradagem ou amostragem da camada superficial. Além disso, não há necessidade de 
+  fornecer todas as informações solicitadas: por exemplo, em muitos casos, a classificação taxonômica não está
+  disponível.
+* `horizon`: Nessa aba você insere os dados dos horizontes e/ou camadas amostradas onde o conteúdo de ferro
+  tenha sido determinado. Qualquer método analítico é aceito, sendo sua responsabilidade a apropriada 
+  identificação e descrição do mesmo tanto aqui como na aba `metadata`. Por exemplo, o nome `fe_sulfurico_eaa`
+  refere-se ao conteúdo de ferro (`fe`) determinado por espectrofotometria de absorção atômica (`eaa`) no
+  extrato de solução de ácido sulfúrico (`sulfurico`) conforme o Manual de Métodos de Análise de Solo da
+  Embrapa Solos.
+
+## Método Analítico
+
+Você viu na seção anterior que a identificação dos dados de conteúdo de ferro é feita usando símbolos que se
+referem ao tipo de extrator ou complexante usado e ao método de determinação. Abaixo são apresentados os
+ssímbolos indicados para os principais extratores/complexantes e métodos de determinação. Note que nossa lista
+não é exastiva. Entre em [contato](contact.html) conosco caso você use métodos analíticos diferentes.  
+ 
+<br>
+
+| Símbolo       | Extrator/Complexante                                 |
+|---------------|------------------------------------------------------|
+| `sulfurico`   | ácido sulfúrico                                      |
+| `oxalato`     | oxalato ácido de amônio                              |
+| `ditionito`   | citrato-ditionito-bicarbonato                        |
+| `pirofosfato` | pirofosfato de sódio                                 |
+| `triacido`    | ácido perclórico + ácido nítrico + ácido fluorídrico |
+| `dtpa`        | DTPA                                                 |
+| `mehlich`     | Mehlich                                              |
+Table: Símbolos indicados para os principais extratores e complexantes.
+
+<br>
+
+| Símbolo  | Método de determinação                                              |
+|----------|---------------------------------------------------------------------|
+| `eaa`    | espectrometria de absorção atômica                                  |
+| `edta`   | complexiometria com EDTA                                            |
+| `eam`    | espectrometria de absorção molecular                                |
+| `icpms`  | espectrometria de massa com plasma acoplado indutivamente           |
+| `icpoes` | espectrometria de emissão atômica com plasma acoplado indutivamente |
+Table: Símbolos indicados para os principais método de determinação.
 
 <!-- ## Origem dos Dados -->
 

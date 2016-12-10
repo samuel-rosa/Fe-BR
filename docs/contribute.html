@@ -64,8 +64,8 @@ Base de Dados Brasileira de Ferro do Solo
 <h2>Forma de Submissão</h2>
 <p>Os dados podem ser submetidos de várias maneiras:</p>
 <ul>
-<li>Caso os dados estejam no formato analógico (relatórios, dissertações e teses), pedimos que você faça a sua digitalização usando o nosso modelo de planilha eletrônica que contém nomes padronizados para as variáveis.</li>
-<li>Se os dados já estiverem no formato digital e o número de registros for pequeno (&lt; 1000 registros), pedimos que os mesmos sejam organizados usando também o nosso modelo de planilha eletrônica.</li>
+<li>Caso os dados estejam no formato analógico (relatórios, dissertações e teses), pedimos que você faça a sua digitalização usando o nosso modelo de planilha eletrônica que contém nomes padronizados para as variáveis (veja abaixo).</li>
+<li>Se os dados já estiverem no formato digital e o número de registros for pequeno (&lt; 1000 registros), pedimos que os mesmos sejam organizados usando também o nosso modelo de planilha eletrônica (veja abaixo).</li>
 <li>Mas se você tiver um volume muito grande de dados (&gt; 1000 registros) já no formato digital, envie-nos uma mensagem para estudarmos a forma mais apropriada para o sua submissão.</li>
 </ul>
 <p>Nossos modelos de planilha eletrônica para organização dos dados foram construídos usando os mesmos padrões internacionais usados pelo World Soil Information Service (<a href="http://www.isric.org/data/wosis">WoSIS</a>). Versões para usuários de LibreOffice (formato ODS) e Microsoft Office (formato XLS) podem ser descarregadas de:</p>
@@ -73,7 +73,94 @@ Base de Dados Brasileira de Ferro do Solo
 <li>LibreOffice: <a href="https://github.com/samuel-rosa/Fe-BR/raw/master/templates/template.ods" class="uri">https://github.com/samuel-rosa/Fe-BR/raw/master/templates/template.ods</a></li>
 <li>Microsoft Office: <a href="https://github.com/samuel-rosa/Fe-BR/raw/master/templates/template.xls" class="uri">https://github.com/samuel-rosa/Fe-BR/raw/master/templates/template.xls</a></li>
 </ul>
-<!-- ## Método Analítico -->
+<p>Cada planilha possui cinco abas (com nomes em inglês):</p>
+<ul>
+<li><code>README</code>: Aqui você encontra informações gerais sobre o preenchimento das demais abas.</li>
+<li><code>dataset</code>: Nesta aba você inclui as informações necessárias à identificação do conjunto de dados. São 18 os campos a ser preenchidos, mas você tem liberdade para acrescentar informações onde indicado pelo símbolo <code>(...)</code>. Essas informações são necessárias para garantir a apropriada citação do conjunto de dados no futuro.</li>
+<li><code>metadata</code>: Aqui você encontra a definição e descrição dos campos a ser preenchidos nas abas <code>profile</code> e <code>horizon</code>.</li>
+<li><code>profile</code>: Aqui você fornece informações sobre os perfis ou pontos de observação e amostragem do solo, tais como as coordenadas geográficas, a data de amostragem e a classificação do solo. Note que o termo <code>profile</code> é usado aqui fazendo referência à qualquer tipo de observação e amostragem do solo, seja um perfil propriamente dito ou uma tradagem ou amostragem da camada superficial. Além disso, não há necessidade de fornecer todas as informações solicitadas: por exemplo, em muitos casos, a classificação taxonômica não está disponível.</li>
+<li><code>horizon</code>: Nessa aba você insere os dados dos horizontes e/ou camadas amostradas onde o conteúdo de ferro tenha sido determinado. Qualquer método analítico é aceito, sendo sua responsabilidade a apropriada identificação e descrição do mesmo tanto aqui como na aba <code>metadata</code>. Por exemplo, o nome <code>fe_sulfurico_eaa</code> refere-se ao conteúdo de ferro (<code>fe</code>) determinado por espectrofotometria de absorção atômica (<code>eaa</code>) no extrato de solução de ácido sulfúrico (<code>sulfurico</code>) conforme o Manual de Métodos de Análise de Solo da Embrapa Solos.</li>
+</ul>
+</div>
+<div id="metodo-analitico" class="section level2">
+<h2>Método Analítico</h2>
+<p>Você viu na seção anterior que a identificação dos dados de conteúdo de ferro é feita usando símbolos que se referem ao tipo de extrator ou complexante usado e ao método de determinação. Abaixo são apresentados os ssímbolos indicados para os principais extratores/complexantes e métodos de determinação. Note que nossa lista não é exastiva. Entre em <a href="contact.html">contato</a> conosco caso você use métodos analíticos diferentes.</p>
+<p><br></p>
+<table>
+<caption>Símbolos indicados para os principais extratores e complexantes.</caption>
+<thead>
+<tr class="header">
+<th>Símbolo</th>
+<th>Extrator/Complexante</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>sulfurico</code></td>
+<td>ácido sulfúrico</td>
+</tr>
+<tr class="even">
+<td><code>oxalato</code></td>
+<td>oxalato ácido de amônio</td>
+</tr>
+<tr class="odd">
+<td><code>ditionito</code></td>
+<td>citrato-ditionito-bicarbonato</td>
+</tr>
+<tr class="even">
+<td><code>pirofosfato</code></td>
+<td>pirofosfato de sódio</td>
+</tr>
+<tr class="odd">
+<td><code>triacido</code></td>
+<td>ácido perclórico + ácido nítrico + ácido fluorídrico</td>
+</tr>
+<tr class="even">
+<td><code>dtpa</code></td>
+<td>DTPA</td>
+</tr>
+<tr class="odd">
+<td><code>mehlich</code></td>
+<td>Mehlich</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<table>
+<caption>Símbolos indicados para os principais método de determinação.</caption>
+<colgroup>
+<col width="13%" />
+<col width="86%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Símbolo</th>
+<th>Método de determinação</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>eaa</code></td>
+<td>espectrometria de absorção atômica</td>
+</tr>
+<tr class="even">
+<td><code>edta</code></td>
+<td>complexiometria com EDTA</td>
+</tr>
+<tr class="odd">
+<td><code>eam</code></td>
+<td>espectrometria de absorção molecular</td>
+</tr>
+<tr class="even">
+<td><code>icpms</code></td>
+<td>espectrometria de massa com plasma acoplado indutivamente</td>
+</tr>
+<tr class="odd">
+<td><code>icpoes</code></td>
+<td>espectrometria de emissão atômica com plasma acoplado indutivamente</td>
+</tr>
+</tbody>
+</table>
 <!-- ## Origem dos Dados -->
 <!-- [perfis](#perfis) -->
 <!-- [amostras individuais](#amostras) -->
