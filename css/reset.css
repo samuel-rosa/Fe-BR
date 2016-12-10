@@ -38,17 +38,17 @@ q:before, q:after {
 
 table {
 	border-collapse: collapse;
-	border-width: 1px;
+	border-width: 0px;
 	border-color: #666666;
 }
 table th {
-	border-width: 1px;
+	border-width: 0px;
 	padding: 8px;
 	border-style: solid;
 	background-color: #ede4d3;
 }
 table td {
-	border-width: 1px;
+	border-width: 0px;
 	padding: 8px;
 	border-style: solid;
 }

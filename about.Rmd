@@ -9,7 +9,7 @@ Equipe
 imageWrap <-
   function (path) {
     paste(
-      '<table width="150" border="0" align="left" cellpadding="5" cellspacing="0">',
+      '<table width="150" align="left" cellpadding="5" cellspacing="0">',
       '<tr>',
       '<td align="center" valign="top"><br>',
       '<img src="', path, '" width="140"><br>',
@@ -43,8 +43,8 @@ E-mail: alessandrosamuelrosa em gmail.com<br>
 
 `r imageWrap("images/dalmolin.jpeg")`
 Ricardo possui graduação e mestrado em Agronomia pela UFSM e doutorado em Ciências do Solo pela Universidade
-Federal do Rio Grande do Sul (UFRGS. Atualmente é professor associado da UFSM, atuando no Programa de
-Pós-Graduação em Ciência do Solo (PPGCS) e no Programa Pós-gGraduação em Educação Ambiental. Ricardo é 
+Federal do Rio Grande do Sul (UFRGS). Atualmente é professor associado da UFSM, atuando no Programa de
+Pós-Graduação em Ciência do Solo (PPGCS) e no Programa Pós-Graduação em Educação Ambiental. Ricardo é 
 consultor de diversas revistas científicas e líder do Grupo de Pesquisa do CNPq *Gênese, composição e
 comportamento dos solos do RS*. Ricardo tem experiência na área ambiental e agronômica, com ênfase em gênese, 
 morfologia e classificação do solo, atuando principalmente nos temas 'levantamento de solos', 'classificação 
@@ -64,6 +64,8 @@ professor adjunto da UFSM, com experiência na área de Agronomia, com ênfase e
 principalmente nos seguintes temas: estrutura do solo, compactação do solo, compressibilidade do solo, relação
 entre propriedades físicas do solo e crescimento de plantas, balanço hídrico.
 
+<br>
+
 Homepage: <br>
 Currículo: [Lattes](http://lattes.cnpq.br/7251203817503318)<br>
 E-mail: paulogubiani em gmail.com<br>
@@ -71,10 +73,15 @@ E-mail: paulogubiani em gmail.com<br>
 ## Eloi Carvalho Ribeiro
 
 `r imageWrap("images/eloi.jpeg")`
-Eloi é um geoinformata, Mestre em Ciências dos Recursos Naturais e Engenharia
-Ambiental pelo Instituto Politécnico de Castelo Branco, Portugal, possuindo ainda Diploma de Estudos
-Avançados em SIG na Universidade Politécnica de Valência, Espanha. Eloi ingressou no ISRIC em abril de 2013.
-Eloi fala inglês, português e espanhol.
+Eloi é um geoinformata, Mestre em Ciências dos Recursos Naturais e Engenharia Ambiental pelo Instituto 
+Politécnico de Castelo Branco, Portugal, possuindo ainda Diploma de Estudos Avançados em Sistema de Informação
+Geográfica (SIG) pela Universidade Politécnica de Valência, Espanha. Eloi ingressou no ISRIC em abril de 2013,
+onde atua como responsável técnico pelo World Soil Information Service (WoSIS). Eloi fala inglês, português e
+espanhol.
+
+<br>
+
+<br>
 
 Homepage: <br>
 Currículo: [ResearchGate](https://www.researchgate.net/profile/Eloi_Ribeiro)<br>
