@@ -142,7 +142,7 @@ p {
   float:right;
 }
 
-#footer .socialIcon {
+/*#footer .socialIcon {
   display:inline-block;
   width:32px;
   height:32px;
@@ -151,27 +151,27 @@ p {
 
   vertical-align: middle;
   opacity:.50;
-}
+}*/
 
-#footer .socialIcon:hover {
+/*#footer .socialIcon:hover {
   opacity:1;
-}
+}*/
 
-#footer .socialIcon.twitter {
+/*#footer .socialIcon.twitter {
   background-image: url(../images/twitterLogo.svg);
-}
+}*/
 
-#footer .socialIcon.gitHub {
+/*#footer .socialIcon.gitHub {
   background-image: url(../images/gitHubLogo.svg);
-}
+}*/
 
-#footer .socialIcon.linkedIn {
+/*#footer .socialIcon.linkedIn {
   background-image: url(../images/linkedIn.svg);
-}
+}*/
 
-#footer .socialIcon.facebook {
+/*#footer .socialIcon.facebook {
   background-image: url(../images/facebookLogo.svg);
-}
+}*/
 
 #footer #finePrint a {
   text-decoration: none;
