@@ -46,6 +46,13 @@ centro da área experimental estimadas usando o [Google Maps](https://www.google
 posicional pode ser definido como sendo igual ao raio da área experimental, valor esse informado à variável
 `gps_accuracy`.
 
+## O que devo fazer quando algumas das informações solicitadas estiverem faltando?
+
+Você não deve se preocupar caso não tenha todas as informações necessárias para preencher as planilhas
+eletrônicas. Algumas das informações solicitadas não são tão importantes assim, como é o caso da classificação
+do solo, o uso da terra e a litologia subjacente. Você pode simplesmente deixar as colunas dessas variáveis
+em branco.
+
 ## Tenho dados de voçorocas. Posso submetê-los?
 
 Sim, você pode. Qualquer tipo de dado de conteúdo de ferro do solo pode ser submetido, independente do
@@ -83,3 +90,8 @@ calibrados com os dados padronizados.
 Uma vez padronizados e harmonizados, os dados serão servidos gratuitamente, sob a licença não-restritiva 
 definida na fonte, para uso pela comunidade científica. Esse uso posterior incluirá a espacialização do
 conteúdo de ferro do solo em todo o território nacional.
+
+## Como fazer para que o conjunto de dados submetido seja citável?
+
+A melhor maneira de tornar um conjunto de dados citável é atribuindo-lhe um [DOI](http://www.doi.org/)
+(Digital Object Identifier). Diversas organização emitem DOI. Uma delas é a [PANGAEA](https://www.pangaea.de/).
