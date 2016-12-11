@@ -9,8 +9,9 @@ Você pode contribuir com quaisquer dados de conteúdo de ferro do solo, seja qu
 a forma e profundidade de amostragem, ou a localização geográfica das amostras analisadas, desde que esses
 dados sejam fruto de suas atividades e/ou estejam sob sua responsabilidade. Mas antes de preparar seu conjunto
 de dados para contribuição, recomendamos que você leia atentamente as diretrizes abaixo e, caso restarem 
-dúvidas, entre em [contato](contact.html) conosco. Assim poderemos discutir detalhes importantes e garantir 
-que o seu (e o nosso) tempo seja gasto de maneira racional.
+dúvidas, veja a lista de [perguntas mais frequentes](faq.html) ou entre em [contato](contact.html) conosco.
+Assim poderemos discutir detalhes importantes e garantir que o seu (e o nosso) tempo seja gasto de maneira 
+racional.
 
 ## Forma de Submissão
 
@@ -22,8 +23,8 @@ em mãos:
   (veja abaixo).
 * Se os dados já estiverem no formato digital e o número de registros for pequeno (< 1000 registros), pedimos
   que os mesmos sejam organizados usando também o nosso modelo de planilha eletrônica (veja abaixo).
-* Mas se você tiver um volume muito grande de dados (> 1000 registros) já no formato digital, envie-nos uma 
-  mensagem para estudarmos a forma mais apropriada para o sua submissão.
+* Mas se você tiver em mãos um volume muito grande de dados (> 1000 registros) já no formato digital, 
+  envie-nos uma mensagem para estudarmos a forma mais apropriada para a sua submissão.
 
 Nosso modelo de planilha eletrônica para organização dos dados foi construído usando o mesmo padrão
 internacional usado pelo World Soil Information Service ([WoSIS](http://www.isric.org/data/wosis)) -- o que
@@ -45,24 +46,20 @@ A planilha eletrônica possui cinco abas (com nomes em inglês):
 * `profile`: Aqui você fornece informações sobre os perfis ou pontos de observação e amostragem do solo, tais
   como as coordenadas geográficas, a data de amostragem e a classificação do solo. Note que o termo `profile`
   é usado aqui fazendo referência à qualquer tipo de observação e amostragem do solo, seja um perfil 
-  propriamente dito ou uma tradagem ou amostragem da camada superficial. Além disso, não há necessidade de 
-  fornecer todas as informações solicitadas: por exemplo, em muitos casos, a classificação taxonômica não está
-  disponível.
+  propriamente dito ou uma tradagem ou amostragem da camada superficial.
 * `horizon`: Nessa aba você insere os dados dos horizontes e/ou camadas amostradas onde o conteúdo de ferro
   tenha sido determinado. Qualquer método analítico é aceito, sendo sua responsabilidade a apropriada 
-  identificação e descrição dos mesmos tanto aqui como na aba `metadata`. Por exemplo, o nome 
-  `fe_sulfurico_eaa` refere-se ao conteúdo de ferro (`fe`) determinado por espectrometria de absorção atômica
-  (`eaa`) no extrato de solução de ácido sulfúrico (`sulfurico`).
-
+  identificação e descrição dos mesmos tanto aqui como na aba `metadata` (veja mais abaixo).
+  
 Você verá em cada uma das abas da planilha eletrônica o símbolo `(...)`. Esse símbolo indica a posição da aba
 em que você pode adicionar informações adicionais relacionadas ao conteúdo da respectiva aba. Entre em 
 [contato](contact.html) caso você tenha dúvidas sobre como inserir informações adicionais.
 
 ## Métodos Analíticos
 
-Você viu acima que a identificação dos dados de conteúdo de ferro na aba `horizon` é feita usando símbolos que
-se referem ao tipo de extrator ou complexante usado e ao método de determinação. Esse tipo de identificação é
-importante por dois motivos:
+A identificação dos dados de conteúdo de ferro na aba `horizon` é feita usando símbolos que se referem ao tipo
+de extrator ou complexante usado e ao método de determinação. Esse tipo de identificação é importante por dois
+motivos:
 
 1. Para que você possa informar dados do conteúdo de ferro de uma mesma amostra de solo obtidos usando 
 diferentes métodos analíticos.
@@ -70,9 +67,11 @@ diferentes métodos analíticos.
 harmonização.
 
 Por exemplo, é comum determinar o conteúdo de ferro do solo extraído com oxalato ácido de amônio e
-citrato-ditionito-bicarbonato a fim de quantificar o grau de cristalinidade dos óxidos de ferro no solo, usando
-como método de determinação a espectrometria de absorção atômica. Nesse caso, a identificação é feita usando
-os símbolos `fe_oxalato_eaa` e `fe_ditionito_eaa`, respectivamente.
+citrato-ditionito-bicarbonato a fim de quantificar o grau de cristalinidade dos óxidos de ferro no solo, 
+usando como método de determinação a espectrometria de absorção atômica. Nesse caso, a identificação é feita 
+usando os símbolos `fe_oxalato_eaa` e `fe_ditionito_eaa`, respectivamente. Já o nome `fe_sulfurico_eaa` 
+refere-se ao conteúdo de ferro determinado por espectrometria de absorção atômica no extrato de solução de
+ácido sulfúrico.
 
 Abaixo são apresentados os símbolos indicados para os principais extratores/complexantes e métodos de 
 determinação.
@@ -103,18 +102,6 @@ Table: Símbolos indicados para os principais método de determinação.
 
 <br>
 
-Note que as listas de símbolos não são exaustivas. Entre em [contato](contact.html) conosco caso você use
+Note que nossas listas de símbolos não são exaustivas. Entre em [contato](contact.html) conosco caso você use
 métodos analíticos diferentes daqueles apresentados aqui para que possamos definir os símbolos mais
 apropriados.
-
-<!-- ## Origem dos Dados -->
-
-<!-- [perfis](#perfis) -->
-
-<!-- [amostras individuais](#amostras) -->
-
-<!-- ## Dados de Perfis do Solo {#perfis} -->
-
-<!-- ## Dados de Amostras Individuais {#amostras} -->
-
-
