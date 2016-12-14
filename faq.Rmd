@@ -24,6 +24,11 @@ coordenadas geográficas. Por exemplo, talvez você saiba que o perfil foi obser
 município, dentro de uma área com raio de aproximadamente 10.000 m. Nesse caso, você pode definir a variável
 `gps_accuracy: 10.000`.
 
+## Dados mineralógicos (DRX, Mössbauer, FTIR) e do conteúdo de Fe nas frações granulométricas são aceitos?
+
+Não, esse tipo de dados não é aceito. Nosso interesse único é no ***conteúdo*** de ferro no ***solo*** como
+um todo. Apenas dados quantitativos são aceitos.
+
 ## Posso submeter dados de parcelas experimentais?
 
 Sim, você pode. Qualquer tipo de dado de conteúdo de ferro do solo pode ser submetido.
