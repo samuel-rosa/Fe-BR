@@ -5,5 +5,19 @@ title: "Fe-BR: Base de Dados Brasileira de Ferro do Solo"
 Notícias
 =================================
 
-***Você quer virar notícia?*** Contribua com dados de conteúdo de ferro do solo que
-sejam fruto de suas atividades!
+***Você quer virar notícia?*** Contribua com dados de conteúdo de ferro do solo que sejam fruto de suas
+atividades! Veja abaixo quem já contribuiu.
+
+```{r, echo=FALSE}
+ctb <- 
+  function (name, inst, number) {
+    data.frame(Nome = name, Instituição = inst, Contribuição = number)
+  }
+people <- 
+  rbind(
+    ctb("José Maria Filippini Alba", "Embrapa Clima Temperado", 196)
+  )
+people <- people[order(people$Contribuição), ]
+people <- cbind(Posição = 1:nrow(people), people)
+knitr::kable(people)
+```
