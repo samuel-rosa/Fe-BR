@@ -10,8 +10,8 @@ a forma e profundidade de amostragem, ou a localização geográfica das amostra
 dados sejam fruto de suas atividades e/ou estejam sob sua responsabilidade. Mas antes de preparar seu conjunto
 de dados para contribuição, recomendamos que você leia atentamente as diretrizes abaixo e, caso restarem 
 dúvidas, veja a lista de [perguntas mais frequentes](faq.html) ou entre em [contato](contact.html) conosco.
-Assim poderemos discutir detalhes importantes e garantir que o seu (e o nosso) tempo seja gasto de maneira 
-racional.
+Assim poderemos discutir detalhes importantes e garantir que o seu (e o nosso) tempo seja gasto da melhor
+maneira possível.
 
 ## Forma de Submissão
 
@@ -22,13 +22,13 @@ em mãos:
   digitalização usando o nosso modelo de planilha eletrônica que contém nomes padronizados para as variáveis
   (veja abaixo).
 * Se os dados já estiverem no formato digital e o número de registros for pequeno (< 1000 registros), pedimos
-  que os mesmos sejam organizados usando também o nosso modelo de planilha eletrônica (veja abaixo).
+  que os mesmos sejam organizados usando também o nosso modelo de planilha eletrônica.
 * Mas se você tiver em mãos um volume muito grande de dados (> 1000 registros) já no formato digital, 
   envie-nos uma mensagem para estudarmos a forma mais apropriada para a sua submissão.
 
 Nosso modelo de planilha eletrônica para organização dos dados foi construído usando o mesmo padrão
 internacional usado pelo World Soil Information Service ([WoSIS](http://www.isric.org/data/wosis)) -- o que
-explica o uso de termos em inglês (veja abaixo). Versões para usuários de LibreOffice (formato ODS) e 
+explica o uso de termos em inglês. Versões para usuários de LibreOffice (formato ODS) e 
 Microsoft Office (formato XLS) podem ser descarregadas de:
 
 * LibreOffice: https://github.com/samuel-rosa/Fe-BR/raw/master/templates/template.ods
