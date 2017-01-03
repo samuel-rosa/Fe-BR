@@ -267,3 +267,23 @@ p {
     float:none;
   }
 }
+
+/* Settings for items that should appear only on wide screens */ 
+
+/*medium+ screen sizes*/
+@media (min-width:992px) {
+    .desktop-only {
+        display:block !important;
+    }
+}
+ 
+/*small screen sizes*/
+@media (max-width: 991px) {
+    .mobile-only {
+        display:block !important;
+    }
+ 
+    .desktop-only {
+        display:none !important;
+    }
+}

@@ -268,7 +268,7 @@ p {
   }
 }
 
-/* Settings for items that should appear only on wide screens 
+/* Settings for items that should appear only on wide screens */ 
 
 /*medium+ screen sizes*/
 @media (min-width:992px) {
