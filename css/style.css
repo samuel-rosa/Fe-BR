@@ -222,22 +222,24 @@ p {
   #header #content #logo {
     display:inline-block;
     font-size:18px;
+    padding:0 0px;
   }
 
   #header #content #navLeft {
     font-size:12px;
-    margin-left:1px;
+    margin-left:0px;
+    padding:0 0px;
   }
 
   #header #content #nav .navItem {
     display:inline-block;
-    padding:0px 5px;
+    padding:0px 3px;
   }
 
-  #header #content #nav .gitHub {
+  /*#header #content #nav .gitHub {
     width:24px;
     height:24px;
-  }
+  }*/
 
   #main #content {
     margin:60px auto;
