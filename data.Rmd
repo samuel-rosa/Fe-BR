@@ -5,8 +5,23 @@ title: "Fe-BR: Base de Dados Brasileira de Ferro do Solo"
 Dados
 =================================
 
-***Você quer virar notícia?*** Contribua com dados de conteúdo de ferro do solo que sejam fruto de suas
-atividades! Veja abaixo quem já contribuiu.
+Veja a classificação dos cientistas do solo que já contribuíram com dados de conteúdo de ferro do solo.
+
+```{r, echo=FALSE}
+ctb <- 
+  function (name, inst, number) {
+    data.frame(Nome = name, Instituição = inst, Contribuição = number)
+  }
+rank <- 
+  function (people) {
+    people <- people[order(people$Contribuição, decreasing = TRUE), ]
+    people <- cbind(Posição = 1:nrow(people), people)
+    rownames(people) <- NULL
+    return (people)
+  }
+```
+
+## Dados Pedológicos
 
 ```{r, echo=FALSE}
 ctb <- 
@@ -15,9 +30,19 @@ ctb <-
   }
 people <- 
   rbind(
+    ctb("Elias Mendes Costa", "Universidade Federal Rural do Rio de Janeiro", 17)
+  )
+knitr::kable(rank(people), format = "html", table.attr = "width='100%'")
+```
+
+<br>
+
+## Dados Edafológicos
+
+```{r, echo=FALSE}
+people <- 
+  rbind(
     ctb("José Maria Filippini Alba", "Embrapa Clima Temperado", 196)
   )
-people <- people[order(people$Contribuição, decreasing = TRUE), ]
-people <- cbind(Posição = 1:nrow(people), people)
-knitr::kable(people)
+knitr::kable(rank(people), format = "html", table.attr = "width='100%'")
 ```
