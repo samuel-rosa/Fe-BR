@@ -22,7 +22,7 @@ imageWrap <-
 ```
 
 
-## Alessandro Samuel-Rosa
+## Alessandro Samuel-Rosa (Execução)
 
 `r imageWrap("images/alessandro.png")`
 Alessandro estudou Ciência do Solo e trabalha na Universidade Federal de Santa Maria (UFSM) desde o final de 
@@ -39,7 +39,7 @@ Homepage: http://samuel-rosa.github.io/<br>
 Currículo: [Lattes](http://lattes.cnpq.br/1609751519717461)<br>
 E-mail: alessandrosamuel em mail.ufsm.br<br>
 
-## Ricardo Simão Diniz Dalmolin
+## Ricardo Simão Diniz Dalmolin (Execução)
 
 `r imageWrap("images/dalmolin.jpeg")`
 Ricardo possui graduação e mestrado em Agronomia pela UFSM e doutorado em Ciências do Solo pela Universidade
@@ -56,7 +56,7 @@ Homepage: <br>
 Currículo: [Lattes](http://lattes.cnpq.br/3735884911693854)<br>
 E-mail: dalmolin em ufsm.br<br>
 
-## Paulo Ivonir Gubiani
+## Paulo Ivonir Gubiani (Execução)
 
 `r imageWrap("images/paulo.jpeg")`
 Paulo possui graduação em Agronomia, e mestrado e doutorado em Ciência do Solo pela UFSM. Atualmente Paulo é
@@ -72,7 +72,7 @@ Homepage: <br>
 Currículo: [Lattes](http://lattes.cnpq.br/7251203817503318)<br>
 E-mail: paulogubiani em gmail.com<br>
 
-## Eloi Carvalho Ribeiro
+## Eloi Carvalho Ribeiro (Colaboração)
 
 `r imageWrap("images/eloi.jpeg")`
 Eloi é um geoinformata, Mestre em Ciências dos Recursos Naturais e Engenharia Ambiental pelo Instituto 
@@ -89,7 +89,7 @@ Homepage: <br>
 Currículo: [ResearchGate](https://www.researchgate.net/profile/Eloi_Ribeiro)<br>
 E-mail: eloi.carvalhoribeiro em wur.nl<br>
 
-## Stanley Robson de Medeiros Oliveira
+## Stanley Robson de Medeiros Oliveira (Colaboração)
 
 `r imageWrap("images/stanley.png")`
 Stanley é graduado e mestre em Ciência da Computação pela Universidade Federal de Campina Grande (UFCG) e 
