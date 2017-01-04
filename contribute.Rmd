@@ -2,8 +2,7 @@
 title: "Fe-BR: Base de Dados Brasileira de Ferro do Solo"
 ---
 
-Contribuir
-=================================
+## CONTRIBUIR
 
 Você pode contribuir com quaisquer dados de conteúdo de ferro do solo, seja qual for o método analítico usado,
 a forma e profundidade de amostragem, ou a localização geográfica das amostras analisadas, desde que esses
@@ -73,34 +72,46 @@ usando os símbolos `fe_oxalato_eaa` e `fe_ditionito_eaa`, respectivamente. Já 
 refere-se ao conteúdo de ferro determinado por espectrometria de absorção atômica no extrato de solução de
 ácido sulfúrico.
 
-Abaixo são apresentados os símbolos indicados para os principais extratores/complexantes e métodos de 
+```{r, echo=FALSE}
+mtd <- 
+  function (symbol, method) {
+    data.frame(Símbolo = symbol, Descrição = method)
+  }
+```
+
+Abaixo são apresentados os símbolos indicados para os principais extratores e complexantes e métodos de 
 determinação.
 
-<br>
+```{r, echo=FALSE}
+method <-
+  rbind(
+    mtd("`sulfurico`", "ácido sulfúrico"),
+    mtd("`oxalato`", "oxalato ácido de amônio"),
+    mtd("`ditionito`", "citrato-ditionito-bicarbonato"),
+    mtd("`pirofosfato`", "pirofosfato de sódio"),
+    mtd("`triacido`", "ácido perclórico + ácido nítrico + ácido fluorídrico"),
+    mtd("`dtpa`", "DTPA"),
+    mtd("`mehlich`", "Mehlich")
+  )
+knitr::kable(
+  method, format = "html", table.attr = "width='100%'", 
+  caption = "Símbolos indicados para os principais extratores e complexantes.")
+```
 
-| Símbolo       | Extrator/Complexante                                 |
-|---------------|------------------------------------------------------|
-| `sulfurico`   | ácido sulfúrico                                      |
-| `oxalato`     | oxalato ácido de amônio                              |
-| `ditionito`   | citrato-ditionito-bicarbonato                        |
-| `pirofosfato` | pirofosfato de sódio                                 |
-| `triacido`    | ácido perclórico + ácido nítrico + ácido fluorídrico |
-| `dtpa`        | DTPA                                                 |
-| `mehlich`     | Mehlich                                              |
-Table: Símbolos indicados para os principais extratores e complexantes.
 
-<br>
-
-| Símbolo  | Método de determinação                                              |
-|----------|---------------------------------------------------------------------|
-| `eaa`    | espectrometria de absorção atômica                                  |
-| `edta`   | complexometria com EDTA                                             |
-| `eam`    | espectrometria de absorção molecular                                |
-| `icpms`  | espectrometria de massa com plasma acoplado indutivamente           |
-| `icpoes` | espectrometria de emissão atômica com plasma acoplado indutivamente |
-Table: Símbolos indicados para os principais método de determinação.
-
-<br>
+```{r, echo=FALSE}
+method <-
+  rbind(
+    mtd("`eaa`", "espectrometria de absorção atômica"),
+    mtd("`edta`", "complexometria com EDTA"),
+    mtd("`eam`", "espectrometria de absorção molecular"),
+    mtd("`icpms`", "espectrometria de massa com plasma acoplado indutivamente"),
+    mtd("`icpoes`", "espectrometria de emissão atômica com plasma acoplado indutivamente")
+  )
+knitr::kable(
+  method, format = "html", table.attr = "width='100%'", 
+  caption = "Símbolos indicados para os principais métodos de determinação.")
+```
 
 Note que nossas listas de símbolos não são exaustivas. Entre em [contato](contact.html) conosco caso você use
 métodos analíticos diferentes daqueles apresentados aqui para que possamos definir os símbolos mais
