@@ -2,8 +2,12 @@
 title: "Fe-BR: Base de Dados Brasileira de Ferro do Solo"
 ---
 
-Dados
-=================================
+## DADOS
+
+As contribuições com dados de ferro do solo são classificadas de acordo com o tipo de dados: pedológicos ou
+edafológicos (veja abaixo). As duas maiores contribuições de cada tipo de dados de ferro do solo serão 
+premiadas com a coautoria de um artigo a ser submetido para publicação na revista 
+[Earth System Science Data](http://earth-system-science-data.net/) (Fator de Impacto de 8,268).
 
 Veja a classificação dos cientistas do solo que já contribuíram com dados de conteúdo de ferro do solo.
 
@@ -23,26 +27,38 @@ rank <-
 
 ## Dados Pedológicos
 
+Dados pedológicos de ferro do solo são aqueles dados oriundos de atividades mais diretamente relacionadas ao 
+estudo da gênese, morfologia e classificação do solo, por vezes tendo servido para o mapeamento do solo. Dados 
+pedológicos de ferro costumam ser obtidos a partir da amostragem de perfis do solo, descritos completa ou 
+incompletamente, onde a unidade amostral básica é definida como sendo um horizonte. Os limites superior e 
+inferior de um horizonte costumam ser definidos com base na observação de características relacionadas aos 
+processos de formação do solo.
+
 ```{r, echo=FALSE}
-ctb <- 
-  function (name, inst, number) {
-    data.frame(Nome = name, Instituição = inst, Contribuição = number)
-  }
 people <- 
   rbind(
     ctb("Elias Mendes Costa", "Universidade Federal Rural do Rio de Janeiro", 17)
   )
-knitr::kable(rank(people), format = "html", table.attr = "width='100%'")
+knitr::kable(
+  rank(people), format = "html", table.attr = "width='100%'", 
+  caption = "Classificação dos cientistas do solo que contribuíram com dados pedológicos de ferro do solo.")
 ```
 
-<br>
-
 ## Dados Edafológicos
+
+Dados edafológicos de ferro do solo são dados cuja origem são os diversos estudos do solo relacionados à sua
+química, fertilidade, física, conservação, biologia, entre outros. Os dados edafológicos também podem ter 
+servido para o mapeamento do solo. Contudo, diferente dos dados pedológicos, a unidade amostral básica do solo
+para obtenção de dados edafológicos de ferro é definida como sendo uma camada. As dimensões de uma camada 
+amostral costumam ser definidas com base em critérios operacionais ou padrões mais ou menos aceitos pela 
+comunidade científica.
 
 ```{r, echo=FALSE}
 people <- 
   rbind(
     ctb("José Maria Filippini Alba", "Embrapa Clima Temperado", 196)
   )
-knitr::kable(rank(people), format = "html", table.attr = "width='100%'")
+knitr::kable(
+  rank(people), format = "html", table.attr = "width='100%'",
+    caption = "Classificação dos cientistas do solo que contribuíram com dados edafológicos de ferro do solo.")
 ```
