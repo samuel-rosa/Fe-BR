@@ -2,8 +2,7 @@
 title: "Fe-BR: Base de Dados Brasileira de Ferro do Solo"
 ---
 
-Equipe
-=================================
+## EQUIPE
 
 ```{r, echo=FALSE}
 imageWrap <-

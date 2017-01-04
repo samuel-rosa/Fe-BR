@@ -2,8 +2,7 @@
 title: "Fe-BR: Base de Dados Brasileira de Ferro do Solo"
 ---
 
-FAQ
-=================================
+## PERGUNTAS FREQUENTES
 
 ## Posso submeter dados de um perfil sem coordenadas geográficas?
 

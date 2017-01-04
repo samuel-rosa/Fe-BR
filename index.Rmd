@@ -2,8 +2,7 @@
 title: "Fe-BR: Base de Dados Brasileira de Ferro do Solo"
 ---
 
-Apresentação
-=================================
+## APRESENTAÇÃO
 
 Junte-se a nós num ***esforço colaborativo inédito*** da comunidade de cientistas do solo brasileira. O 
 ***objetivo***: construir uma base de dados de ferro do solo centralizada, pública e gratuita, com cobertura 
@@ -33,7 +32,7 @@ Acredite, você tem muito a ganhar! Além da satisfação de colaborar com a com
 dados produzidos em suas atividades, você terá a chance de usar uma base de dados harmonizados, com milhares 
 de registros, para exercitar sua criatividade científica. Você também estará colaborando com o Plano de Ação 
 da Infraestrutura Nacional de Dados Espaciais ([INDE](http://www.inde.gov.br/a-inde/apresentacao.html)). 
-***Mas não é só isso!*** Caso sua contribuição esteja entre as quatro maiores, você será agraciado(a) com a
+***Mas não é só isso!*** Caso sua contribuição esteja entre as quatro maiores, você será agraciado com a
 coautoria de um artigo a ser submetido para publicação na revista 
 [Earth System Science Data](http://earth-system-science-data.net/) (Fator de Impacto 
 de 8,268). ***Quer mais?*** Seu nome citado na página do projeto o deixará famoso. E talvez você ainda ganhe
