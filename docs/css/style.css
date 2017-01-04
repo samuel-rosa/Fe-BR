@@ -105,6 +105,7 @@ p {
   font-style: italic;
 }
 
+/*
 #getting-started h2 {
     line-height:66px;
     font-size:36px;
@@ -120,6 +121,7 @@ p {
 #getting-started .level2 img {
   border: 1px solid #ccc;
 }
+*/
 
 #footer {
   font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -185,7 +187,7 @@ p {
 
 @media only screen and (max-width: 600px) {
 
-  .book .bookMeta {
+  /*.book .bookMeta {
     display:inline;
     margin-left:0px;
   }
@@ -208,10 +210,9 @@ p {
     max-height:100px;
   }
 
-
   .book .bookMeta iframe {
     float:none;
-  }
+  }*/
 
   #header {
     height:40px;
@@ -222,27 +223,30 @@ p {
   #header #content #logo {
     display:inline-block;
     font-size:18px;
+    padding:0 0px;
   }
 
   #header #content #navLeft {
     font-size:12px;
-    margin-left:1px;
+    margin-left:0px;
+    padding:0 0px;
   }
 
   #header #content #nav .navItem {
     display:inline-block;
-    padding:0px 5px;
+    padding:0px 3px;
   }
 
-  #header #content #nav .gitHub {
+  /*#header #content #nav .gitHub {
     width:24px;
     height:24px;
-  }
+  }*/
 
   #main #content {
     margin:60px auto;
   }
 
+  /*
   #getting-started {
     font-size:12px;
   }
@@ -263,6 +267,7 @@ p {
   #getting-started .detail {
     margin-left:54px;
   }
+  */
 
   #footer #content #social {
     float:none;
