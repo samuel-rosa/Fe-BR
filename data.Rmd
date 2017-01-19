@@ -37,7 +37,7 @@ processos de formação do solo.
 ```{r, echo=FALSE}
 people <- 
   rbind(
-    ctb("Elias Mendes Costa", "Universidade Federal Rural do Rio de Janeiro", 17)
+    ctb("Elias Mendes Costa", "Universidade Federal Rural do Rio de Janeiro", 70)
   )
 knitr::kable(
   rank(people), format = "html", table.attr = "width='100%'", 
