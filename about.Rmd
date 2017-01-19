@@ -20,6 +20,8 @@ imageWrap <-
   }
 ```
 
+Nossa equipe conta com pesquisadores capacitados e experientes, com formação diversa e ligados a diferentes
+instituições de ensino, pesquisa e extensão do Brasil e do exterior. Conheça um pouco mais de cada um deles!
 
 ## Alessandro Samuel-Rosa (Execução)
 
@@ -35,10 +37,10 @@ recentemente alguns artigos relevantes sobre esses tópicos em revistas internac
 autor de dois pacotes para o R, os quais são amplamente utilizados, cada um com mais de 200 downloads por mês.
 
 Homepage: http://samuel-rosa.github.io/<br>
-Currículo: [Lattes](http://lattes.cnpq.br/1609751519717461)<br>
+Currículo: http://lattes.cnpq.br/1609751519717461<br>
 E-mail: alessandrosamuel em mail.ufsm.br<br>
 
-## Ricardo Simão Diniz Dalmolin (Execução)
+## Ricardo Simão Diniz Dalmolin (Supervisão)
 
 `r imageWrap("images/dalmolin.jpeg")`
 Ricardo possui graduação e mestrado em Agronomia pela UFSM e doutorado em Ciências do Solo pela Universidade
@@ -51,24 +53,25 @@ de solos', 'aptidão de uso das terras', 'sensoriamento remoto' e 'mapeamento di
 presidente do Núcleo Regional Sul da Sociedade Brasileira de Ciência do Solo, membro do Conselho Diretor da
 Sociedade Brasileira de Ciência do Solo, e responsável pelo Museu de Solos do RS.
 
-Homepage: <br>
-Currículo: [Lattes](http://lattes.cnpq.br/3735884911693854)<br>
+Homepage: http://w3.ufsm.br/dalmolin/<br>
+Currículo: http://lattes.cnpq.br/3735884911693854<br>
 E-mail: dalmolin em ufsm.br<br>
 
-## Paulo Ivonir Gubiani (Execução)
+## Paulo Ivonir Gubiani (Supervisão)
 
 `r imageWrap("images/paulo.jpeg")`
-Paulo possui graduação em Agronomia, e mestrado e doutorado em Ciência do Solo pela UFSM. Atualmente Paulo é
-professor adjunto da UFSM, com experiência na área de Agronomia, com ênfase em Física do Solo, atuando
-principalmente nos seguintes temas: estrutura do solo, compactação do solo, compressibilidade do solo, relação
-entre propriedades físicas do solo e crescimento de plantas, balanço hídrico.
+Paulo possui graduação em Agronomia, e mestrado e doutorado em Ciência do Solo pela UFSM, tendo sido foco de
+sua formação acadêmica o estudo da compactação do solo e seu efeito sobre o desenvolvimento e produtividade 
+das culturas agrícolas. Atualmente Paulo é professor da área de Física do Solo na UFSM, desenvolvendo estudos, 
+principalmente, sobre os seguintes temas: 'estrutura do solo', 'compactação do solo', 'compressibilidade do
+solo', 'relação entre propriedades físicas do solo e crescimento de plantas' e 'balanço hídrico'. Paulo também
+tem grande experiência no uso e desenvolvimento de aplicativos em VBA para planilhas eletrônicas como o 
+Microsoft Office Excel. Recentemente, Paulo publicou importante revisão bibliográfica sobre indicadores 
+físicos de qualidade do solo, numa tentativa de apontar para novos caminhos para a pesquisa em Física do Solo
+no Brasil.
 
-<br>
-
-<br>
-
-Homepage: <br>
-Currículo: [Lattes](http://lattes.cnpq.br/7251203817503318)<br>
+Homepage: http://gubianisolos.blogspot.com.br/<br>
+Currículo: http://lattes.cnpq.br/7251203817503318<br>
 E-mail: paulogubiani em gmail.com<br>
 
 ## Eloi Carvalho Ribeiro (Colaboração)
@@ -76,16 +79,16 @@ E-mail: paulogubiani em gmail.com<br>
 `r imageWrap("images/eloi.jpeg")`
 Eloi é um geoinformata, Mestre em Ciências dos Recursos Naturais e Engenharia Ambiental pelo Instituto 
 Politécnico de Castelo Branco, Portugal, possuindo ainda Diploma de Estudos Avançados em Sistema de Informação
-Geográfica (SIG) pela Universidade Politécnica de Valência, Espanha. Eloi ingressou no ISRIC em abril de 2013,
-onde atua como responsável técnico pelo World Soil Information Service (WoSIS). Eloi fala inglês, português e
-espanhol.
+Geográfica (SIG) pela Universidade Politécnica de Valência, Espanha. Eloi trabalhou por vários anos na 
+manutenção de uma base de dados de incêndios florestais na Espanha. Em abril de 2013 ele ingressou no ISRIC, 
+onde passou a ser o responsável técnico pelo World Soil Information Service (WoSIS). Durante os últimos quatro
+anos, Eloi já conseguiu reunir todas as bases de dados dos diversos projetos do ISRIC, bem como agregar bases
+de dados de diversos países como Estados Unidos e Brasil, o que exigiu grande esforço para a padronização dos
+dados. Recentemente, Eloi publicou artigo relatando sua experiência à frente da construção e manutenção do
+WoSIS, tendo compartilhados essas experiências também no 1º Encontro Brasileiro de Pedometria em 2016.
 
-<br>
-
-<br>
-
-Homepage: <br>
-Currículo: [ResearchGate](https://www.researchgate.net/profile/Eloi_Ribeiro)<br>
+Homepage: http://www.isric.org/staff/E.%20%28Eloi%29%20Ribeiro<br>
+Currículo: https://www.researchgate.net/profile/Eloi_Ribeiro<br>
 E-mail: eloi.carvalhoribeiro em wur.nl<br>
 
 ## Stanley Robson de Medeiros Oliveira (Colaboração)
@@ -101,7 +104,6 @@ Administração. Atualmente é pesquisador do Laboratório de Inteligência Comp
 Agropecuária. Suas linhas de pesquisa são 'mineração de dados', 'aprendizado de máquina', 'banco de dados' e 
 'sistemas de suporte à decisão'. Tem interesse em desenvolvendo de liderança e de habilidades gerenciais.
 
-Homepage: <br>
-Currículo: [Lattes](http://lattes.cnpq.br/5321244029568287) e
-[ResearchGate](https://www.researchgate.net/profile/Stanley_Oliveira2)<br>
+Homepage: https://www.embrapa.br/equipe/-/empregado/261330/stanley-robson-de-medeiros-oliveira<br>
+Currículo: http://lattes.cnpq.br/5321244029568287<br>
 E-mail: stanley.oliveira em embrapa.br<br>
