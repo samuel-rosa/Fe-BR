@@ -67,7 +67,7 @@ knitr::kable(
 
 Veja como as contribuições com dados de ferro do solo estão distribuídas no território brasileiro.
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, fig.cap="Número de registros (amostras) por unidade da federação."}
 fe_data <- data.frame(rbind(pedology, edafology)[, 3:4])
 colnames(fe_data) <- c("uf", "n")
 fe_data <- by(fe_data$n, fe_data$uf, sum)
