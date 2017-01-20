@@ -7,14 +7,14 @@ title: "Fe-BR: Base de Dados Brasileira de Ferro do Solo"
 As contribuições com dados de ferro do solo são classificadas de acordo com o tipo de dados: pedológicos ou
 edafológicos (veja abaixo). As duas maiores contribuições de cada tipo de dados de ferro do solo serão 
 premiadas com a coautoria de um artigo a ser submetido para publicação na revista 
-[Earth System Science Data](http://earth-system-science-data.net/) (Fator de Impacto de 8,268).
+[Earth System Science Data](http://earth-system-science-data.net/) (Fator de Impacto > 8).
 
 Veja a classificação dos cientistas do solo que já contribuíram com dados de conteúdo de ferro do solo.
 
 ```{r, echo=FALSE}
 ctb <- 
-  function (name, inst, number) {
-    data.frame(Nome = name, Instituição = inst, Contribuição = number)
+  function (name, inst, uf, number) {
+    data.frame(Nome = name, Instituição = inst, uf = uf, Contribuição = number)
   }
 rank <- 
   function (people) {
@@ -35,12 +35,12 @@ inferior de um horizonte costumam ser definidos com base na observação de cara
 processos de formação do solo.
 
 ```{r, echo=FALSE}
-people <- 
+pedology <- 
   rbind(
-    ctb("Elias Mendes Costa", "Universidade Federal Rural do Rio de Janeiro", 70)
+    ctb("Elias Mendes Costa", "Universidade Federal Rural do Rio de Janeiro", "RJ", 70)
   )
 knitr::kable(
-  rank(people), format = "html", table.attr = "width='100%'", 
+  rank(pedology[, -3]), format = "html", table.attr = "width='100%'", 
   caption = "Classificação dos cientistas do solo que contribuíram com dados pedológicos de ferro do solo.")
 ```
 
@@ -54,11 +54,27 @@ amostral costumam ser definidas com base em critérios operacionais ou padrões 
 comunidade científica.
 
 ```{r, echo=FALSE}
-people <- 
+edafology <- 
   rbind(
-    ctb("José Maria Filippini Alba", "Embrapa Clima Temperado", 196)
+    ctb("José Maria Filippini Alba", "Embrapa Clima Temperado", "RS", 196)
   )
 knitr::kable(
-  rank(people), format = "html", table.attr = "width='100%'",
+  rank(edafology[, -3]), format = "html", table.attr = "width='100%'",
     caption = "Classificação dos cientistas do solo que contribuíram com dados edafológicos de ferro do solo.")
 ```
+
+## Distribuição Territorial
+
+Veja como as contribuições com dados de ferro do solo estão distribuídas no território brasileiro.
+
+```{r, echo=FALSE}
+fe_data <- data.frame(rbind(pedology, edafology)[, 3:4])
+colnames(fe_data) <- c("uf", "n")
+fe_data <- by(fe_data$n, fe_data$uf, sum)
+states <- raster::shapefile("data/states.shp")
+idx <- states$uf %in% names(fe_data)
+states$n <- 0
+states$n[idx] <- fe_data[states$uf[idx]]
+sp::spplot(states, "n", col.regions = rev(terrain.colors(100)))
+```
+
