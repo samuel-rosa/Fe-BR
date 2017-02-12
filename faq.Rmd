@@ -4,29 +4,38 @@ title: "Fe-BR: Base de Dados Brasileira de Ferro do Solo"
 
 ## PERGUNTAS FREQUENTES
 
-## Posso submeter dados de um perfil sem coordenadas geográficas?
+## Posso submeter dados de uma observação sem coordenadas geográficas?
 
 Sim, você pode. Contudo, recomendamos que você faça um esforço para conseguir alguma estimativa das 
 coordenadas geográficas. Uma alternativa eficiente é o [Google Maps](https://www.google.com.br/maps/). Com o 
-Google Maps você obtém coordenadas geográficas no formato latitude/longitude em graus. Nesse caso, você pode
-usar as seguintes definições na aba `profile`:
+Google Maps você obtém coordenadas geográficas no formato latitude/longitude em graus. Basta identificar o local da observação, posicionar o cursor do *mouse* e pressionar o botão direito. Na janela que aparecer, selecione "O que há aqui?". As coordenadas geográficas (latitude e longitude) do local selecionado aparecerão na parte inferior da tela. Nesse caso, você pode usar as seguintes definições na aba `observation` da planilha eletrônica para organização dos dados:
 
-* `coordinat_system`: `WGS 84, EPSG:4326`
-* `gps_accuracy`: `6`
-* `accuracy_type`: `MAPA`
+    coordinat_system: WGS 84, EPSG: 4326
+    gps_measurement_date: NA
+    gps_measurement_time: NA
+    gps_accuracy: 6
+    accuracy_type: WEB
 
-## E se eu não souber a localização aproximada do perfil?
+O valor `gps_accuracy: 6` deve-se ao fato de que serviços de mapeamento baseados na web possuem, em muitos locais do território nacional, acurácia posicional de 6 m.
 
-Você pode informar o nome do município (`city_name`) e do estado brasileiro (`state_id`) onde o perfil foi
-observado e amostrado. Contudo, nós recomendamos que você informe, pelo menos, uma estimativa grosseira das
-coordenadas geográficas. Por exemplo, talvez você saiba que o perfil foi observado ao norte da sede do
-município, dentro de uma área com raio de aproximadamente 10.000 m. Nesse caso, você pode definir a variável
-`gps_accuracy: 10.000`.
+## E se eu não souber a localização aproximada da observação?
+
+Você pode informar o nome do município (`city_name`) e do estado brasileiro (`state_id`) onde a observação foi realizada. Contudo, nós recomendamos que você informe, pelo menos, uma estimativa grosseira das coordenadas geográficas. Por exemplo, talvez você saiba que o perfil foi observado ao norte da sede do município, dentro de uma área com raio de aproximadamente 10.000 m. Nesse caso, você pode definir a variável `gps_accuracy: 10.000`.
 
 ## Dados mineralógicos (DRX, Mössbauer, FTIR) e do conteúdo de Fe nas frações granulométricas são aceitos?
 
-Não, esse tipo de dados não é aceito. Nosso interesse único é no ***conteúdo*** de ferro no ***solo*** como
+Não, esse tipo de dado não é aceito. Nosso interesse único é no ***conteúdo*** de ferro no ***solo*** como
 um todo. Apenas dados quantitativos são aceitos.
+
+## Como devo organizar dados de observações repetidas no tempo?
+
+A unidade básica de organização da base de dados de ferro do solo é a observação do solo. Uma observação do solo, identificada com a variável `observation_id` na aba `observation`, possui dois localizadores principais: a localização no espaço, dada pelas coordenadas geográficas `x_coord` e	`y_coord`, e a localização no tempo, dada pela data em que a observação é feita `observation_date`. Considere o exemplo fictício de duas observações feitas no mesmo local nos anos de 2010 e 2011:
+
+    observation_id observation_date  x_coord	y_coord
+    perfil-01-2010       05-08-2010   -53.56   -28.68
+    perfil-01-2011       07-09-2011   -53.56   -28.68
+
+Note que as duas observações feitas repetidamente, ao longo do tempo, no mesmo local, possuem valores diferentes para as variáveis `observation_id` e `observation_date`, sendo as coordenadas geográficas repetidas. Essa é a forma correta de organizar dados de observações repetidas no tempo.
 
 ## Posso submeter dados de parcelas experimentais?
 
@@ -34,54 +43,33 @@ Sim, você pode. Qualquer tipo de dado de conteúdo de ferro do solo pode ser su
 
 ## E se os dados das parcelas experimentais não forem georeferenciados?
 
-Você pode submeter os dados mesmo sem coordenadas geográficas e informando apenas o nome do município
-(`city_name`) e do estado brasileiro (`state_id`) onde as parcelas experimentais estiverem localizadas. 
-Contudo, recomendamos que você use o [Google Maps](https://www.google.com.br/maps/) para obter uma 
-estimativa das coordenadas geográficas conforme descrito acima.
+Você pode submeter os dados mesmo sem coordenadas geográficas e informando apenas o nome do município (`city_name`) e do estado brasileiro (`state_id`) onde as parcelas experimentais estiverem localizadas. Contudo, recomendamos que você use o [Google Maps](https://www.google.com.br/maps/) para obter uma estimativa das coordenadas geográficas conforme descrito acima.
 
-Como os dados de parcelas experimentais geralmente são obtidos via amostragem composta 
-(`sample_type`: `COMPOSTA`), você pode informar as coordenadas geográficas referentes ao centro de cada 
-parcela experimental. Nesse caso, você pode informar o tamanho da parcela experimental em `sample_area`.
+Como muitos dados de parcelas experimentais costumam ser obtidos via amostragem composta (`sample_type`: `COMPOSTA`), você pode informar as coordenadas geográficas referentes ao centro de cada parcela experimental. Nesse caso, você pode informar o tamanho da parcela experimental em `sample_area`.
 
 ## Não sei a localização exata de cada parcela experimental. O que devo fazer?
 
-Nesse caso você pode usar, para cada parcela experimental, as mesmas coordenadas geográficas referentes ao
-centro da área experimental estimadas usando o [Google Maps](https://www.google.com.br/maps/). O erro 
-posicional pode ser definido como sendo igual ao raio da área experimental, valor esse informado à variável
-`gps_accuracy`.
+Nesse caso você pode usar, para cada parcela experimental, as mesmas coordenadas geográficas referentes ao centro da área experimental estimadas usando o [Google Maps](https://www.google.com.br/maps/). A acurácia posicional pode ser definido como sendo igual ao raio da área experimental, valor esse informado à variável `gps_accuracy`.
 
 ## O que devo fazer quando algumas das informações solicitadas estiverem faltando?
 
-Você não deve se preocupar caso não tenha todas as informações necessárias para preencher as planilhas
-eletrônicas. Algumas das informações solicitadas não são tão importantes assim, como é o caso da classificação
-do solo, o uso da terra e a litologia subjacente. Você pode simplesmente deixar as colunas dessas variáveis
-em branco.
+Você não deve se preocupar caso não tenha todas as informações necessárias para preencher a planilha eletrônica. Algumas das informações solicitadas não são tão importantes assim, como é o caso da classificação do solo, o uso da terra e a litologia subjacente. Você pode simplesmente deixar as colunas dessas variáveis em branco ou escrever `NA` (*not available*).
 
 ## Tenho dados de voçorocas. Posso submetê-los?
 
-Sim, você pode. Qualquer tipo de dado de conteúdo de ferro do solo pode ser submetido, independente do
-objeto de estudo. Nesse caso, a atribuição de coordenadas geográficas -- caso não estejam disponíveis -- 
-pode seguir as mesmas recomendações feitas acima para o caso das parcelas experimentais.
+Sim, você pode. Qualquer tipo de dado de conteúdo de ferro do solo pode ser submetido, independente do objeto de estudo. Nesse caso, a atribuição de coordenadas geográficas -- caso não estejam disponíveis -- pode seguir as mesmas recomendações feitas acima para o caso das parcelas experimentais.
 
-## Possso submeter dados do projeto RADAM BRASIL e similares?
+## Possso submeter dados do projeto RADAMBRASIL e similares?
 
-Não, você não pode. Os dados do projeto RADAM BRASIL e similares já estão em domínio público, tendo sido quase
-completamente incluídos nas bases de dados das instituições responsáveis como EMBRAPA e IBGE. O acesso a essas
-bases de dados será feita diretamente pela equipe do projeto. A exceção são os casos em que for comprovado 
-que um determinado conjunto de dados ainda não está disponível nessas bases de dados.
+Não, você não pode. Os dados do projeto RADAMBRASIL e similares já estão em domínio público, tendo sido quase completamente incluídos nas bases de dados das instituições responsáveis como EMBRAPA e IBGE. O acesso a essas bases de dados é feito diretamente pela nossa equipe. A exceção são os casos em que for comprovado que um determinado conjunto de dados ainda não está disponível nessas bases de dados.
 
 ## Posso submeter dados com qualquer tipo de licença de uso?
 
-Não, você não pode. Somente são aceitas licenças não-restritivas, que permitem a redistribuição, modificação, 
-adaptação e criação a partir do conjunto de dado submetido, e que não obrigam o licenciamento dos trabalhos
-derivados sob os mesmos termos.
+Não, você não pode. Somente são aceitas licenças de uso não-restritivas, que permitem a redistribuição, modificação, adaptação e criação a partir do conjunto de dado submetido, e que não obrigam o licenciamento dos trabalhos derivados sob os mesmos termos.
 
-Contudo, você tem reservado o direito de decidir se os produtos derivados podem ou não ter fins comerciais. 
-Além disso, todos os novos trabalhos derivados do conjunto de dados submetido devem atribuir o devido crédito
-ao autor da criação original.
+Contudo, você tem reservado o direito de decidir se os produtos derivados podem ou não ter fins comerciais. Além disso, todos os novos trabalhos derivados do conjunto de dados submetido devem atribuir o devido crédito ao autor da criação original.
 
-As licenças [Creative Commons](https://br.creativecommons.org/licencas/) CC BY (Atribuição) e CC BY-NC 
-(Atribuição Não-Comercial) se enquadram nessas definições.
+As licenças [Creative Commons](https://br.creativecommons.org/licencas/) CC BY (Atribuição) e CC BY-NC (Atribuição Não-Comercial) se enquadram nessas definições.
 
 ## O que será feito com os dados submetidos?
 

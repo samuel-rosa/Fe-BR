@@ -22,7 +22,7 @@ ocupação do solo que respeitem as reais capacidades desse precioso e não-reno
 
 ## Como participar?
 
-***Participar é muito fácil!*** Você só precisa [contribuir](contribute.html) com quaisquer dados de conteúdo de ferro do solo que sejam fruto de suas atividades, seja qual for o método analítico usado, a forma e profundidade de amostragem, ou a localização geográfica das amostras analisadas. [Veja que já contribuiu](data.html)!
+***Participar é muito fácil!*** Você só precisa [contribuir](contribute.html) com quaisquer dados de conteúdo de ferro do solo que sejam fruto de suas atividades, seja qual for o método analítico usado, a forma e profundidade de amostragem, ou a localização geográfica das amostras analisadas. [Veja quem já contribuiu](data.html)!
 
 ## O que você ganha com isso?
 
