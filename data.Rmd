@@ -97,7 +97,7 @@ states$n <- 0
 states$n[idx] <- fe_data[states$uf[idx]]
 tmp <- sp::spTransform(
   states, "+proj=utm +zone=24 +south +ellps=aust_SA +towgs84=-57,1,-41,0,0,0,0 +units=m +no_defs")
-states$d <- states$n / (rgeos::gArea(tmp, byid = TRUE) / 1000)
+states$d <- states$n / (rgeos::gArea(tmp, byid = TRUE) / 1e6)
 ```
 
 Que tal ver como as contribuições com dados de ferro do solo estão distribuídas no território brasileiro?
@@ -113,7 +113,10 @@ sp::spplot(
   main = "Número de registros", xlab = "Longitude", ylab = "Latitude")
 ```
 
-A figura muda quando olhamos para a densidade de registros, ou seja, o número de registros por quilômetro quadrado na base de dados de ferro do solo. Até o momento, `r states$uf[which.max(states$d)]` possui a maior densidade de registros $(`r max(states$d)`)$. Já `r states$uf[which.min(states$d)]` apresenta a menor densidade de registros por quilômetro quadrado $(`r min(states$d)`)$
+A figura muda quando olhamos para a densidade de registros, ou seja, o número de registros por quilômetro
+quadrado na base de dados de ferro do solo. Até o momento, `r states$uf[which.max(states$d)]` possui a maior 
+densidade de registros (`r round(max(states$d), 4)`). Já `r states$uf[which.min(states$d)]` apresenta a menor 
+densidade de registros por quilômetro quadrado ($`r round(min(states$d), 6)`$)
 `r if(states$uf[which.min(states$n)] == "TO") paste("-- pelo motivo já explicado acima")`.
 
 
