@@ -4,18 +4,23 @@ title: "Fe-BR: Base de Dados Brasileira de Ferro do Solo"
 
 ## DADOS
 
-As contribuições com dados de ferro do solo são classificadas de acordo com o tipo de dados: pedológicos ou
-edafológicos (veja abaixo). As duas maiores contribuições de cada tipo de dados de ferro do solo serão 
-premiadas com a coautoria de um artigo a ser submetido para publicação na revista 
+Aqui você fica sabendo mais sobre as contribuições com dados de ferro do solo que já recebemos. Mas antes de
+começar, é preciso esclarecer que as contribuições são classificadas de acordo com o tipo de dado, ou seja, 
+pedológicos ou edafológicos (veja mais informações abaixo). As duas maiores contribuições de cada tipo de dado 
+de ferro do solo serão premiadas com a coautoria de um artigo a ser submetido para publicação na revista 
 [Earth System Science Data](http://earth-system-science-data.net/) (Fator de Impacto > 8).
 
-Veja a classificação dos cientistas do solo que já contribuíram com dados de conteúdo de ferro do solo.
+Veja quem já contribuiu!
 
 ```{r, echo=FALSE}
-ctb <- 
-  function (name, inst, uf, number) {
-    data.frame(Nome = name, Instituição = inst, uf = uf, Contribuição = number)
-  }
+# Retornar o nome dos arquivos contendo as contribuições. Por padrão, o nome dos arquivos inicia com 'ctb'
+# e termina com 'csv'.
+ctb <- list.files("data", pattern = "[^ctb][^.][csv$]")
+ctb <- paste("data/", ctb, sep = "")
+ctb <- lapply(ctb, read.csv, header = TRUE, stringsAsFactors = FALSE)
+```
+
+```{r, echo=FALSE}
 rank <- 
   function (people) {
     people <- people[order(people$Contribuição, decreasing = TRUE), ]
@@ -27,18 +32,27 @@ rank <-
 
 ## Dados Pedológicos
 
-Dados pedológicos de ferro do solo são aqueles dados oriundos de atividades mais diretamente relacionadas ao 
+Dados pedológicos são aqueles dados oriundos de atividades mais diretamente relacionadas ao 
 estudo da gênese, morfologia e classificação do solo, por vezes tendo servido para o mapeamento do solo. Dados 
-pedológicos de ferro costumam ser obtidos a partir da amostragem de perfis do solo, descritos completa ou 
+pedológicos costumam ser obtidos a partir da amostragem de perfis do solo, descritos completa ou 
 incompletamente, onde a unidade amostral básica é definida como sendo um horizonte. Os limites superior e 
 inferior de um horizonte costumam ser definidos com base na observação de características relacionadas aos 
 processos de formação do solo.
 
 ```{r, echo=FALSE}
-pedology <- 
-  rbind(
-    ctb("Elias Mendes Costa", "Universidade Federal Rural do Rio de Janeiro", "RJ", 70)
-  )
+# Identificar as contribuições pedológicas
+pedology <- lapply(ctb, function (x) x[x$Tipo == "PEDOLÓGICO", ])
+pedology <- pedology[sapply(pedology, nrow) != 0]
+# Agregar dados por contribuição
+pedology <- lapply(pedology, function (x) {
+  n <- nrow(x)
+  uf <- ifelse(n == 27, "Brasil", x$UF)
+  name <- unique(x$Nome)
+  inst <- unique(x$Instituição)
+  number <- sum(x$Contribuição)
+  data.frame(Nome = name, Instituição = inst, uf = uf, Contribuição = number)
+})
+pedology <- do.call(rbind, pedology)
 knitr::kable(
   rank(pedology[, -3]), format = "html", table.attr = "width='100%'", 
   caption = "Classificação dos cientistas do solo que contribuíram com dados pedológicos de ferro do solo.")
@@ -46,18 +60,27 @@ knitr::kable(
 
 ## Dados Edafológicos
 
-Dados edafológicos de ferro do solo são dados cuja origem são os diversos estudos do solo relacionados à sua
+Dados edafológicos são dados cuja origem são os diversos estudos do solo relacionados à sua
 química, fertilidade, física, conservação, biologia, entre outros. Os dados edafológicos também podem ter 
 servido para o mapeamento do solo. Contudo, diferente dos dados pedológicos, a unidade amostral básica do solo
-para obtenção de dados edafológicos de ferro é definida como sendo uma camada. As dimensões de uma camada 
+para obtenção de dados edafológicos é definida como sendo uma camada. As dimensões de uma camada 
 amostral costumam ser definidas com base em critérios operacionais ou padrões mais ou menos aceitos pela 
 comunidade científica.
 
 ```{r, echo=FALSE}
-edafology <- 
-  rbind(
-    ctb("José Maria Filippini Alba", "Embrapa Clima Temperado", "RS", 196)
-  )
+# Identificar as contribuições pedológicas
+edafology <- lapply(ctb, function (x) x[x$Tipo == "EDAFOLÓGICO", ])
+edafology <- edafology[sapply(edafology, nrow) != 0]
+# Agregar dados por contribuição
+edafology <- lapply(edafology, function (x) {
+  n <- nrow(x)
+  uf <- ifelse(n == 27, "Brasil", x$UF)
+  name <- unique(x$Nome)
+  inst <- unique(x$Instituição)
+  number <- sum(x$Contribuição)
+  data.frame(Nome = name, Instituição = inst, uf = uf, Contribuição = number)
+})
+edafology <- do.call(rbind, edafology)
 knitr::kable(
   rank(edafology[, -3]), format = "html", table.attr = "width='100%'",
     caption = "Classificação dos cientistas do solo que contribuíram com dados edafológicos de ferro do solo.")
@@ -65,16 +88,37 @@ knitr::kable(
 
 ## Distribuição Territorial
 
-Veja como as contribuições com dados de ferro do solo estão distribuídas no território brasileiro.
-
-```{r, echo=FALSE, fig.cap="Número de registros (amostras) por unidade da federação."}
-fe_data <- data.frame(rbind(pedology, edafology)[, 3:4])
-colnames(fe_data) <- c("uf", "n")
-fe_data <- by(fe_data$n, fe_data$uf, sum)
+```{r, echo=FALSE}
+fe_data <- do.call(rbind, ctb)[, c("UF", "Contribuição")]
+fe_data <- by(fe_data$Contribuição, fe_data$UF, sum)
 states <- raster::shapefile("data/states.shp")
 idx <- states$uf %in% names(fe_data)
 states$n <- 0
 states$n[idx] <- fe_data[states$uf[idx]]
-sp::spplot(states, "n", col.regions = rev(terrain.colors(100)))
+tmp <- sp::spTransform(
+  states, "+proj=utm +zone=24 +south +ellps=aust_SA +towgs84=-57,1,-41,0,0,0,0 +units=m +no_defs")
+states$d <- states$n / (rgeos::gArea(tmp, byid = TRUE) / 1000)
+```
+
+Que tal ver como as contribuições com dados de ferro do solo estão distribuídas no território brasileiro?
+
+A primeira figura mostra o número de registros (amostras de horizontes e camadas) em cada uma das unidades da federação. `r states$uf[which.max(states$n)]` concentra o maior número de registros até agora (`r max(states$n)`), enquanto `r states$uf[which.min(states$n)]` possui o menor número de registros (`r min(states$n)`) na base de dados de ferro do solo.
+`r if(states$uf[which.max(states$n)] == "MG") paste("É interessante que MG tenha o maior número de registro, sendo o estado brasileiro onde os maiores valores de conteúdo de ferro do solo costumam ser reportados.")`
+`r if(states$uf[which.min(states$n)] == "TO") paste("No caso do TO, o reduzido número de registros deve-se", "ao fato de muitos estudos terem sido realizados antes da sua emancipação em 5 de outubro de 1988.")`
+
+```{r, echo=FALSE}
+sp::spplot(
+  states, "n", col.regions = rev(terrain.colors(100)), scales = list(draw = TRUE), 
+  main = "Número de registros", xlab = "Longitude", ylab = "Latitude")
+```
+
+A figura muda quando olhamos para a densidade de registros, ou seja, o número de registros por quilômetro quadrado na base de dados de ferro do solo. Até o momento, `r states$uf[which.max(states$d)]` possui a maior densidade de registros $(`r max(states$d)`)$. Já `r states$uf[which.min(states$d)]` apresenta a menor densidade de registros por quilômetro quadrado $(`r min(states$d)`)$
+`r if(states$uf[which.min(states$n)] == "TO") paste("-- pelo motivo já explicado acima")`.
+
+
+```{r, echo=FALSE}
+sp::spplot(
+  states, "d", col.regions = rev(terrain.colors(100)), scales = list(draw = TRUE),
+  main = "Densidade de registros", xlab = "Longitude", ylab = "Latitude")
 ```
 
