@@ -110,7 +110,7 @@ A primeira figura mostra o número de registros (amostras de horizontes e camada
 ```{r, echo=FALSE}
 sp::spplot(
   states, "n", col.regions = rev(terrain.colors(100)), scales = list(draw = TRUE), 
-  main = "Número de registros", xlab = "Longitude", ylab = "Latitude")
+  main = expression(Número~de~registros~por~estado~(n)), xlab = "Longitude", ylab = "Latitude")
 ```
 
 A figura muda quando olhamos para a densidade de registros, ou seja, o número de registros por quilômetro
@@ -123,6 +123,6 @@ densidade de registros por quilômetro quadrado ($`r round(min(states$d), 6)`$)
 ```{r, echo=FALSE}
 sp::spplot(
   states, "d", col.regions = rev(terrain.colors(100)), scales = list(draw = TRUE),
-  main = "Densidade de registros", xlab = "Longitude", ylab = "Latitude")
+  main = expression(Densidade~de~registros~por~estado~(n/km^2)), xlab = "Longitude", ylab = "Latitude")
 ```
 
