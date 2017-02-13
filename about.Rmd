@@ -23,7 +23,7 @@ imageWrap <-
 Nossa equipe conta com pesquisadores capacitados e experientes, com formação diversa e ligados a diferentes
 instituições de ensino, pesquisa e extensão do Brasil e do exterior. Conheça um pouco mais de cada um deles!
 
-## Alessandro Samuel-Rosa (Execução)
+## Alessandro Samuel-Rosa
 
 `r imageWrap("images/alessandro.png")`
 Alessandro estudou Ciência do Solo e trabalha na Universidade Federal de Santa Maria (UFSM) desde o final de 
@@ -35,12 +35,14 @@ métodos e técnicas pedométricas. Seu principal interesse científico é a mod
 estratégias de amostragem, seleção e calibração de modelos e análise de incerteza. Alessandro publicou 
 recentemente alguns artigos relevantes sobre esses tópicos em revistas internacionais. Alessandro também é o
 autor de dois pacotes para o R, os quais são amplamente utilizados, cada um com mais de 200 downloads por mês.
+(Saiba mais [aqui](http://lattes.cnpq.br/1609751519717461))
 
-Homepage: http://samuel-rosa.github.io/<br>
-Currículo: http://lattes.cnpq.br/1609751519717461<br>
-E-mail: alessandrosamuel em mail.ufsm.br<br>
+As tarefas principais de Alessandro são:
 
-## Ricardo Simão Diniz Dalmolin (Supervisão)
+1. Captação de dados junto à comunidade de cientistas do solo brasileira, e
+2. Concepção, construção, manutenção e divulgação da base de dados.
+
+## Ricardo Simão Diniz Dalmolin
 
 `r imageWrap("images/dalmolin.jpeg")`
 Ricardo possui graduação e mestrado em Agronomia pela UFSM e doutorado em Ciências do Solo pela Universidade
@@ -51,13 +53,15 @@ comportamento dos solos do RS*. Ricardo tem experiência na área ambiental e ag
 morfologia e classificação do solo, atuando principalmente nos temas 'levantamento de solos', 'classificação 
 de solos', 'aptidão de uso das terras', 'sensoriamento remoto' e 'mapeamento digital de solos'. Ainda foi 
 presidente do Núcleo Regional Sul da Sociedade Brasileira de Ciência do Solo, membro do Conselho Diretor da
-Sociedade Brasileira de Ciência do Solo, e responsável pelo Museu de Solos do RS.
+Sociedade Brasileira de Ciência do Solo, e responsável pelo Museu de Solos do RS. (Saiba mais 
+[aqui](http://lattes.cnpq.br/3735884911693854))
 
-Homepage: http://w3.ufsm.br/dalmolin/<br>
-Currículo: http://lattes.cnpq.br/3735884911693854<br>
-E-mail: dalmolin em ufsm.br<br>
+As principais tarefas de Ricardo são:
 
-## Paulo Ivonir Gubiani (Supervisão)
+1. Supervisão do projeto, e
+2. Captação de dados junto à comunidade de pedologia quali- e quantitativa.
+
+## Paulo Ivonir Gubiani
 
 `r imageWrap("images/paulo.jpeg")`
 Paulo possui graduação em Agronomia, e mestrado e doutorado em Ciência do Solo pela UFSM, tendo sido foco de
@@ -68,13 +72,33 @@ solo', 'relação entre propriedades físicas do solo e crescimento de plantas' 
 tem grande experiência no uso e desenvolvimento de aplicativos em VBA para planilhas eletrônicas como o 
 Microsoft Office Excel. Recentemente, Paulo publicou importante revisão bibliográfica sobre indicadores 
 físicos de qualidade do solo, numa tentativa de apontar para novos caminhos para a pesquisa em Física do Solo
-no Brasil.
+no Brasil. (Saiba mais [aqui](http://lattes.cnpq.br/7251203817503318))
 
-Homepage: http://gubianisolos.blogspot.com.br/<br>
-Currículo: http://lattes.cnpq.br/7251203817503318<br>
-E-mail: paulogubiani em gmail.com<br>
+Paulo possui as seguintes tarefas principais:
 
-## Eloi Carvalho Ribeiro (Colaboração)
+1. Captação de dados junto à comunidade de física e conservação do solo, e 
+2. Elaboração da política de dados.
+
+## Jessé Rodrigo Fink
+
+`r imageWrap("images/jesse.jpg")`
+Jessé possui graduação em Agronomia pela Universidade Federal de Santa Maria (UFSM) e mestrado e doutorado em
+Ciências do Solo pela Universidade Federal do Rio Grande do Sul (UFRGS). Atualmente é professor do Instituto 
+Federal do Paraná (IFPR), Campus Palmas, onde ministra disciplinas na área de Ciência do Solo. Jessé 
+desenvolveu seu mestrado e doutorado com pesquisas relacionadas à mineralogia do solo, especificamente à
+adsorção de fósforo e mineralogia de óxidos de ferro. O doutorado sanduíche na Universidad de Córdoba 
+(Espanha) permitiu sua atuação/aprofundamento do conhecimento de técnicas espectroscópicas para o estudo de
+mineralogia de óxidos de ferro. Atualmente, Jessé tem desenvolvidos trabalhos na área de interface entre
+mineralogia e química do solo. Ainda, Jessé publicou recentemente trabalhos e revisões relacionando a
+importância da matéria orgânica na mineralogia e adsorção de fósforo no solo. (Saiba mais 
+[aqui](http://lattes.cnpq.br/7275681112534211))
+
+As tarefas principais de Jessé são:
+
+1. Captação de dados junto à comunidade de química e mineralogia do solo, e 
+2. Definição de estratégias para harmonização dos dados em relação a métodos de referência.
+
+## Eloi Carvalho Ribeiro
 
 `r imageWrap("images/eloi.jpeg")`
 Eloi é um geoinformata, Mestre em Ciências dos Recursos Naturais e Engenharia Ambiental pelo Instituto 
@@ -85,13 +109,10 @@ onde passou a ser o responsável técnico pelo World Soil Information Service (W
 anos, Eloi já conseguiu reunir todas as bases de dados dos diversos projetos do ISRIC, bem como agregar bases
 de dados de diversos países como Estados Unidos e Brasil, o que exigiu grande esforço para a padronização dos
 dados. Recentemente, Eloi publicou artigo relatando sua experiência à frente da construção e manutenção do
-WoSIS, tendo compartilhados essas experiências também no 1º Encontro Brasileiro de Pedometria em 2016.
+WoSIS, tendo compartilhados essas experiências também no 1º Encontro Brasileiro de Pedometria em 2016. (Saiba 
+mais [aqui](http://www.isric.org/staff/E.%20%28Eloi%29%20Ribeiro))
 
-Homepage: http://www.isric.org/staff/E.%20%28Eloi%29%20Ribeiro<br>
-Currículo: https://www.researchgate.net/profile/Eloi_Ribeiro<br>
-E-mail: eloi.carvalhoribeiro em wur.nl<br>
-
-## Stanley Robson de Medeiros Oliveira (Colaboração)
+## Stanley Robson de Medeiros Oliveira
 
 `r imageWrap("images/stanley.png")`
 Stanley é graduado e mestre em Ciência da Computação pela Universidade Federal de Campina Grande (UFCG) e 
@@ -102,8 +123,5 @@ Pós-Graduação da Faculdade de Engenharia Agrícola (Feagri) da Universidade d
 já atuou como desenvolvedor de software, analista de sistemas, líder de projetos e Chefe Adjunto de 
 Administração. Atualmente é pesquisador do Laboratório de Inteligência Computacional da Embrapa Informática 
 Agropecuária. Suas linhas de pesquisa são 'mineração de dados', 'aprendizado de máquina', 'banco de dados' e 
-'sistemas de suporte à decisão'. Tem interesse em desenvolvendo de liderança e de habilidades gerenciais.
-
-Homepage: https://www.embrapa.br/equipe/-/empregado/261330/stanley-robson-de-medeiros-oliveira<br>
-Currículo: http://lattes.cnpq.br/5321244029568287<br>
-E-mail: stanley.oliveira em embrapa.br<br>
+'sistemas de suporte à decisão'. Tem interesse em desenvolvendo de liderança e de habilidades gerenciais. 
+(Saiba mais [aqui](http://lattes.cnpq.br/5321244029568287))
