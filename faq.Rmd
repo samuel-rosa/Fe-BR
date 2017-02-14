@@ -10,17 +10,35 @@ Sim, você pode. Contudo, recomendamos que você faça um esforço para consegui
 coordenadas geográficas. Uma alternativa eficiente é o [Google Maps](https://www.google.com.br/maps/). Com o 
 Google Maps você obtém coordenadas geográficas no formato latitude/longitude em graus. Basta identificar o local da observação, posicionar o cursor do *mouse* e pressionar o botão direito. Na janela que aparecer, selecione "O que há aqui?". As coordenadas geográficas (latitude e longitude) do local selecionado aparecerão na parte inferior da tela. Nesse caso, você pode usar as seguintes definições na aba `observation` da planilha eletrônica para organização dos dados:
 
-    coordinat_system: WGS 84, EPSG: 4326
-    gps_measurement_date: NA
-    gps_measurement_time: NA
-    gps_accuracy: 6
-    accuracy_type: WEB
+```{r, echo=FALSE}
+tb <- data.frame(
+  coordinat_system = "WGS 84, EPSG: 4326",
+  gps_accuracy     = 6,
+  accuracy_type    = "WEB"
+  )
+knitr::kable(tb)
+```
 
-O valor `gps_accuracy: 6` deve-se ao fato de que serviços de mapeamento baseados na web possuem, em muitos locais do território nacional, acurácia posicional de 6 m.
+O valor de 6 m deve-se ao fato de que, em muitos locais do território nacional, essa é a acurácia posicional 
+de serviços de mapeamento baseados na web.
 
 ## E se eu não souber a localização aproximada da observação?
 
-Você pode informar o nome do município (`city_name`) e do estado brasileiro (`state_id`) onde a observação foi realizada. Contudo, nós recomendamos que você informe, pelo menos, uma estimativa grosseira das coordenadas geográficas. Por exemplo, talvez você saiba que o perfil foi observado ao norte da sede do município, dentro de uma área com raio de aproximadamente 10.000 m. Nesse caso, você pode definir a variável `gps_accuracy: 10.000`.
+Você pode informar o nome do município (`city_name`) e do estado brasileiro (`state_id`) onde a
+observação foi realizada. Contudo, nós recomendamos que você informe, pelo menos, uma estimativa grosseira das
+coordenadas geográficas. Por exemplo, talvez você saiba que o perfil foi observado ao norte da sede do
+município de Santa Maria, no estado do Rio Grande do Sul, dentro de uma área de 1 ha. Nesse caso:
+
+```{r, echo=FALSE}
+tb <- data.frame(
+  city_name    = "Santa Maria",
+  state_id     = "RS",
+  gps_accuracy = 50
+  )
+knitr::kable(tb)
+```
+
+Note que 50 m é aproximadamente o raio de uma área quadrada de 1 ha.
 
 ## Dados mineralógicos (DRX, Mössbauer, FTIR) e do conteúdo de Fe nas frações granulométricas são aceitos?
 
@@ -31,29 +49,51 @@ um todo. Apenas dados quantitativos são aceitos.
 
 A unidade básica de organização da base de dados de ferro do solo é a observação do solo. Uma observação do solo, identificada com a variável `observation_id` na aba `observation`, possui dois localizadores principais: a localização no espaço, dada pelas coordenadas geográficas `x_coord` e	`y_coord`, e a localização no tempo, dada pela data em que a observação é feita `observation_date`. Considere o exemplo fictício de duas observações feitas no mesmo local nos anos de 2010 e 2011:
 
-    observation_id observation_date  x_coord	y_coord
-    perfil-01-2010       05-08-2010   -53.56   -28.68
-    perfil-01-2011       07-09-2011   -53.56   -28.68
+```{r, echo=FALSE}
+tb <- data.frame(
+  observation_id   = c("perfil-01-2010", "perfil-01-2011"),
+  observation_date = c("05-08-2010", "07-09-2011"),
+  x_coord          = c(-53.56, -53.56),
+  y_coord          = c(-28.68, -28.68))
+knitr::kable(tb)
+```
 
-Note que as duas observações feitas repetidamente, ao longo do tempo, no mesmo local, possuem valores diferentes para as variáveis `observation_id` e `observation_date`, sendo as coordenadas geográficas repetidas. Essa é a forma correta de organizar dados de observações repetidas no tempo.
+Note que as duas observações feitas repetidamente, ao longo do tempo, no mesmo local, possuem valores 
+diferentes para as variáveis `observation_id` e `observation_date`, sendo as coordenadas geográficas 
+repetidas. Essa é a forma correta de organizar dados de observações repetidas no tempo.
 
 ## Posso submeter dados de parcelas experimentais?
 
-Sim, você pode. Qualquer tipo de dado de conteúdo de ferro do solo pode ser submetido.
+Sim, você pode. Qualquer tipo de dado de conteúdo de ferro do solo pode ser submetido. Dados de parcelas
+experimentais, em especial, são valiosos. Isso porque costumam ser em grande volume, cobrindo pequenas áreas, 
+ou seja, com grande densidade de observação, o que permite estudar melhor a variação espacial do conteúdo de
+ferro a curtas distâncias.
 
 ## E se os dados das parcelas experimentais não forem georeferenciados?
 
-Você pode submeter os dados mesmo sem coordenadas geográficas e informando apenas o nome do município (`city_name`) e do estado brasileiro (`state_id`) onde as parcelas experimentais estiverem localizadas. Contudo, recomendamos que você use o [Google Maps](https://www.google.com.br/maps/) para obter uma estimativa das coordenadas geográficas conforme descrito acima.
+Você pode submeter os dados mesmo sem coordenadas geográficas e informando apenas o nome do município
+(`city_name`) e do estado brasileiro (`state_id`) onde as parcelas experimentais estiverem localizadas. 
+Contudo, recomendamos que você use o [Google Maps](https://www.google.com.br/maps/) para obter uma estimativa 
+das coordenadas geográficas no centro de cada parcela experimental conforme descrito acima.
 
-Como muitos dados de parcelas experimentais costumam ser obtidos via amostragem composta (`sample_type`: `COMPOSTA`), você pode informar as coordenadas geográficas referentes ao centro de cada parcela experimental. Nesse caso, você pode informar o tamanho da parcela experimental em `sample_area`.
+Muitos dados de parcelas experimentais costumam ser obtidos via amostragem composta 
+(`sample_type`: `COMPOSTA`), isto é, usando várias pequenas amostras da parcela experimental para compor uma
+única e mais representativa amostra. Se esse for o seu caso, informe as coordenadas geográficas referentes ao
+centro de cada parcela experimental e o tamanho da parcela experimental em `sample_area`.
 
 ## Não sei a localização exata de cada parcela experimental. O que devo fazer?
 
-Nesse caso você pode usar, para cada parcela experimental, as mesmas coordenadas geográficas referentes ao centro da área experimental estimadas usando o [Google Maps](https://www.google.com.br/maps/). A acurácia posicional pode ser definido como sendo igual ao raio da área experimental, valor esse informado à variável `gps_accuracy`.
+Nesse caso você pode usar, para cada parcela experimental, as mesmas coordenadas geográficas referentes ao 
+centro da área experimental estimadas usando o [Google Maps](https://www.google.com.br/maps/). A acurácia
+posicional pode ser definida como sendo igual ao raio da área experimental, valor esse informado à variável 
+`gps_accuracy`. Quanto à variável `sample_area`, informe a área amostrada conforme descrito acima.
 
 ## O que devo fazer quando algumas das informações solicitadas estiverem faltando?
 
-Você não deve se preocupar caso não tenha todas as informações necessárias para preencher a planilha eletrônica. Algumas das informações solicitadas não são tão importantes assim, como é o caso da classificação do solo, o uso da terra e a litologia subjacente. Você pode simplesmente deixar as colunas dessas variáveis em branco ou escrever `NA` (*not available*).
+Você não deve se preocupar caso não tenha todas as informações necessárias para preencher a planilha 
+eletrônica. Algumas das informações solicitadas não são tão importantes assim, como é o caso da classificação 
+do solo, o uso da terra e a litologia subjacente. Você pode simplesmente deixar as colunas dessas variáveis em
+branco ou escrever `NA` (*not available*).
 
 ## Tenho dados de voçorocas. Posso submetê-los?
 
