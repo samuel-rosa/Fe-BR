@@ -112,6 +112,11 @@ dados. Recentemente, Eloi publicou artigo relatando sua experiência à frente d
 WoSIS, tendo compartilhados essas experiências também no 1º Encontro Brasileiro de Pedometria em 2016. (Saiba 
 mais [aqui](http://www.isric.org/staff/E.%20%28Eloi%29%20Ribeiro))
 
+As tarefas de Elói são as seguintes:
+
+1. Compilação dos padrões de organização dos dados em planilhas eletrônicas, e  
+2. Análise das estratégias usadas para organização e distribuição dos dados.
+
 ## Stanley Robson de Medeiros Oliveira
 
 `r imageWrap("images/stanley.png")`
@@ -125,3 +130,8 @@ Administração. Atualmente é pesquisador do Laboratório de Inteligência Comp
 Agropecuária. Suas linhas de pesquisa são 'mineração de dados', 'aprendizado de máquina', 'banco de dados' e 
 'sistemas de suporte à decisão'. Tem interesse em desenvolvendo de liderança e de habilidades gerenciais. 
 (Saiba mais [aqui](http://lattes.cnpq.br/5321244029568287))
+
+As tarefas de Stanley são as seguintes:
+
+1. Suporte ao processamento dos dados do Sistema de Informação de Solos Brasileiros, e
+2. Análise das estratégias usadas para organização e distribuição dos dados.
