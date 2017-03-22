@@ -17,7 +17,7 @@ Veja quem já contribuiu!
 # e termina com 'csv'.
 ctb <- list.files("data", pattern = "[^ctb][^.][csv$]")
 ctb <- paste("data/", ctb, sep = "")
-ctb <- lapply(ctb, read.csv, header = TRUE, stringsAsFactors = FALSE)
+ctb <- lapply(ctb, read.csv, header = TRUE, stringsAsFactors = FALSE, encoding = "UTF-8")
 ```
 
 ```{r, echo=FALSE}
@@ -49,7 +49,7 @@ pedology <- lapply(pedology, function (x) {
   uf <- ifelse(n == 27, "Brasil", x$UF)
   name <- unique(x$Nome)
   inst <- unique(x$Instituição)
-  number <- sum(x$Contribuição)
+  number <- paste("[", sum(x$Contribuição), "](", unique(x$url), ")", sep = "")
   data.frame(Nome = name, Instituição = inst, uf = uf, Contribuição = number)
 })
 pedology <- do.call(rbind, pedology)
@@ -77,7 +77,7 @@ edafology <- lapply(edafology, function (x) {
   uf <- ifelse(n == 27, "Brasil", x$UF)
   name <- unique(x$Nome)
   inst <- unique(x$Instituição)
-  number <- sum(x$Contribuição)
+  number <- paste("[", sum(x$Contribuição), "](", unique(x$url), ")", sep = "")
   data.frame(Nome = name, Instituição = inst, uf = uf, Contribuição = number)
 })
 edafology <- do.call(rbind, edafology)
