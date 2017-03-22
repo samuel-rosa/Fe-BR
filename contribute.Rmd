@@ -14,7 +14,8 @@ maneira possível.
 
 ## Forma de Submissão
 
-A forma de submissão dos dados depende do formato e do número de registros (número de amostras de horizontes e camadas) que você tem em mãos:
+A forma de submissão dos dados depende do formato e do número de registros (número de amostras de horizontes e 
+camadas) que você tem em mãos:
 
 * Caso os dados estejam no formato analógico (relatórios, dissertações e teses), pedimos que você faça a sua
   digitalização usando o nosso modelo de planilha eletrônica que contém nomes padronizados para as variáveis
@@ -24,7 +25,10 @@ A forma de submissão dos dados depende do formato e do número de registros (n�
 * Mas se você tiver em mãos um volume muito grande de dados (> 1000 registros) já no formato digital, 
   envie-nos uma mensagem para estudarmos a forma mais apropriada para a sua submissão.
 
-Nosso modelo de planilha eletrônica para organização dos dados foi construído usando o mesmo padrão internacional usado pelo World Soil Information Service ([WoSIS](http://www.isric.org/data/wosis)) -- o que explica parcialmente o uso de termos em inglês. Versões para usuários de LibreOffice (formato ODS) e Microsoft Office (formato XLS) podem ser descarregadas de:
+Nosso modelo de planilha eletrônica para organização dos dados foi construído usando o mesmo padrão 
+internacional usado pelo World Soil Information Service ([WoSIS](http://www.isric.org/data/wosis)) -- o que 
+explica parcialmente o uso de termos em inglês. Versões para usuários de LibreOffice (formato ODS) e Microsoft 
+Office (formato XLS) podem ser descarregadas de:
 
 * LibreOffice: http://www.ufsm.br/febr/templates/template.ods
 * Microsoft Office: http://www.ufsm.br/febr/templates/template.xls
