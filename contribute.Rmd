@@ -33,7 +33,7 @@ Office (formato XLS) podem ser descarregadas de:
 * LibreOffice: http://www.ufsm.br/febr/templates/template.ods
 * Microsoft Office: http://www.ufsm.br/febr/templates/template.xls
 
-A planilha eletrônica possui cinco abas (com nomes em inglês para facilitar a computacional):
+A planilha eletrônica possui cinco abas (com nomes em inglês para facilitar seu tratamento computacional):
 
 * `README`: Aqui você encontra informações gerais sobre o preenchimento das demais abas.
 * `dataset`: Nesta aba você inclui as informações necessárias à identificação do conjunto de dados. São 18 os
