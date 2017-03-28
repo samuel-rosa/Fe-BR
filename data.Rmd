@@ -1,5 +1,5 @@
 ---
-title: "Fe-BR: Base de Dados Brasileira de Ferro do Solo"
+title: "Fe-BR: Repositório Brasileiro de Dados de Ferro do Solo"
 ---
 
 ## DADOS
@@ -102,7 +102,7 @@ states$d <- states$n / (rgeos::gArea(tmp, byid = TRUE) / 1e6)
 
 Que tal ver como as contribuições com dados de ferro do solo estão distribuídas no território brasileiro?
 
-A primeira figura mostra o número de registros (amostras de horizontes e camadas) em cada uma das unidades da federação. `r states$uf[which.max(states$n)]` concentra o maior número de registros até agora (`r max(states$n)`), enquanto `r states$uf[which.min(states$n)]` possui o menor número de registros (`r min(states$n)`) na base de dados de ferro do solo.
+A primeira figura mostra o número de registros (amostras de horizontes e camadas) em cada uma das unidades da federação. `r states$uf[which.max(states$n)]` concentra o maior número de registros até agora (`r max(states$n)`), enquanto `r states$uf[which.min(states$n)]` possui o menor número de registros (`r min(states$n)`) no repositório de dados de ferro do solo.
 `r if(states$uf[which.max(states$n)] == "MG") paste("É interessante que MG tenha o maior número de registro, sendo o estado brasileiro onde os maiores valores de conteúdo de ferro do solo costumam ser reportados.")`
 `r if(states$uf[which.min(states$n)] == "TO") paste("No caso do TO, o reduzido número de registros deve-se", "ao fato de muitos estudos terem sido realizados antes da sua emancipação em 5 de outubro de 1988.")`
 `r if("RJ" %in% states@data[order(states$n, decreasing = TRUE), ]$uf[1:5]) paste("O fato de o RJ estar entre os cinco estados com maior número de registros (", states$n[which(states$uf == "RJ")], ") sugere uma maior atividade dos órgãos oficiais de pesquisa pedológica como a Embrapa Solos em seu estado sede.", sep = "")`
@@ -114,9 +114,9 @@ sp::spplot(
 ```
 
 A figura muda quando olhamos para a densidade de registros, ou seja, o número de registros por quilômetro
-quadrado na base de dados de ferro do solo. Até o momento, `r states$uf[which.max(states$d)]` possui a maior 
-densidade de registros (`r round(max(states$d), 4)`). Já `r states$uf[which.min(states$d)]` apresenta a menor 
-densidade de registros por quilômetro quadrado ($`r round(min(states$d), 6)`$)
+quadrado no repositório de dados de ferro do solo. Até o momento, `r states$uf[which.max(states$d)]` possui a 
+maior densidade de registros (`r round(max(states$d), 4)`). Já `r states$uf[which.min(states$d)]` apresenta a 
+menor densidade de registros por quilômetro quadrado ($`r round(min(states$d), 6)`$)
 `r if(states$uf[which.min(states$n)] == "TO") paste("-- pelo motivo já explicado acima")`.
 
 

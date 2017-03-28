@@ -1,5 +1,5 @@
 ---
-title: "Fe-BR: Base de Dados Brasileira de Ferro do Solo"
+title: "Fe-BR: Repositório Brasileiro de Dados de Ferro do Solo"
 ---
 
 ## CONTRIBUIR
@@ -62,7 +62,7 @@ motivos:
 
 1. Para que você possa informar dados do conteúdo de ferro de uma mesma amostra de solo obtidos usando 
 diferentes métodos analíticos.
-2. Para que nós possamos organizar apropriadamente os dados na base de dados com vistas a sua posterior
+2. Para que nós possamos organizar apropriadamente os dados no repositório de dados com vistas a sua posterior
 harmonização.
 
 Por exemplo, é comum determinar o conteúdo de ferro do solo extraído com oxalato ácido de amônio e

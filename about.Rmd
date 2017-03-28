@@ -1,5 +1,5 @@
 ---
-title: "Fe-BR: Base de Dados Brasileira de Ferro do Solo"
+title: "Fe-BR: Repositório Brasileiro de Dados de Ferro do Solo"
 ---
 
 ## EQUIPE
@@ -40,7 +40,7 @@ autor de dois pacotes para o R, os quais são amplamente utilizados, cada um com
 As tarefas principais de Alessandro são:
 
 1. Captação de dados junto à comunidade de cientistas do solo brasileira, e
-2. Concepção, construção, manutenção e divulgação da base de dados.
+2. Concepção, construção, manutenção e divulgação do repositório de dados.
 
 ## Ricardo Simão Diniz Dalmolin
 

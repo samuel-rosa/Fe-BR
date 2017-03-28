@@ -1,5 +1,5 @@
 ---
-title: "Fe-BR: Base de Dados Brasileira de Ferro do Solo"
+title: "Fe-BR: Repositório Brasileiro de Dados de Ferro do Solo"
 ---
 
 ## PERGUNTAS FREQUENTES
@@ -47,7 +47,11 @@ um todo. Apenas dados quantitativos são aceitos.
 
 ## Como devo organizar dados de observações repetidas no tempo?
 
-A unidade básica de organização da base de dados de ferro do solo é a observação do solo. Uma observação do solo, identificada com a variável `observation_id` na aba `observation`, possui dois localizadores principais: a localização no espaço, dada pelas coordenadas geográficas `x_coord` e	`y_coord`, e a localização no tempo, dada pela data em que a observação é feita `observation_date`. Considere o exemplo fictício de duas observações feitas no mesmo local nos anos de 2010 e 2011:
+A unidade básica de organização do repositório de dados de ferro do solo é a observação do solo. Uma 
+observação do solo, identificada com a variável `observation_id` na aba `observation`, possui dois 
+localizadores principais: a localização no espaço, dada pelas coordenadas geográficas `x_coord` e	`y_coord`, e
+a localização no tempo, dada pela data em que a observação é feita `observation_date`. Considere o exemplo 
+fictício de duas observações feitas no mesmo local nos anos de 2010 e 2011:
 
 ```{r, echo=FALSE}
 tb <- data.frame(

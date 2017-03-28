@@ -1,12 +1,12 @@
 ---
-title: "Fe-BR: Base de Dados Brasileira de Ferro do Solo"
+title: "Fe-BR: Repositório Brasileiro de Dados de Ferro do Solo"
 ---
 
 ## APRESENTAÇÃO
 
 Junte-se a nós num ***esforço colaborativo inédito*** da comunidade de cientistas do solo brasileira. O 
-***objetivo***: construir uma base de dados de ferro do solo centralizada, pública e gratuita, com cobertura 
-nacional.
+***objetivo***: construir um repositório de dados de ferro do solo centralizado, público e gratuito, com 
+cobertura nacional.
 
 Nós acreditamos que o uso sustentável do solo para aplicações ambientais no Brasil exige o conhecimento 
 preciso e acurado da distribuição horizontal e vertical do teor de ferro do solo. Por quê? Porque, em alguns
@@ -27,10 +27,12 @@ ocupação do solo que respeitem as reais capacidades desse precioso e não-reno
 ## O que você ganha com isso?
 
 Acredite, você tem muito a ganhar! Além da satisfação de colaborar com a comunidade científica e valorizar os 
-dados produzidos em suas atividades, você terá a chance de usar uma base de dados harmonizados, com milhares 
-de registros, para exercitar sua criatividade científica. Você também estará colaborando com o Plano de Ação 
-da Infraestrutura Nacional de Dados Espaciais ([INDE](http://www.inde.gov.br/a-inde/apresentacao.html)). 
+dados produzidos em suas atividades, você terá a chance de usar um repositório de dados harmonizados, com 
+milhares de registros, para exercitar sua criatividade científica. Você também estará colaborando com o Plano 
+de Ação da Infraestrutura Nacional de Dados Espaciais ([INDE](http://www.inde.gov.br/a-inde/apresentacao.html)). 
 ***Mas não é só isso!*** Caso sua contribuição esteja entre as quatro maiores, você será agraciado com a
-coautoria de um artigo a ser submetido para publicação na revista [Earth System Science Data](http://earth-system-science-data.net/) (Fator de Impacto > 8). ***Quer mais?***  Fique muito famoso com seu nome citado na página do projeto!
+coautoria de um artigo a ser submetido para publicação na revista 
+[Earth System Science Data](http://earth-system-science-data.net/) (Fator de Impacto > 8). ***Quer mais?***  
+Fique muito famoso com seu nome citado na página do projeto!
 
 Estamos contando com sua contribuição!
