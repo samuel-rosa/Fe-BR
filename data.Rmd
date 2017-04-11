@@ -23,7 +23,7 @@ ctb <- lapply(ctb, read.csv, header = TRUE, stringsAsFactors = FALSE, encoding =
 ```{r, echo=FALSE}
 rank <- 
   function (people) {
-    people <- people[order(people$Contribuição, decreasing = TRUE), ]
+    people <- people[order(people$n, decreasing = TRUE), ]
     people <- cbind(Posição = 1:nrow(people), people)
     rownames(people) <- NULL
     return (people)
@@ -50,11 +50,11 @@ pedology <- lapply(pedology, function (x) {
   name <- unique(x$Nome)
   inst <- unique(x$Instituição)
   number <- paste("[", sum(x$Contribuição), "](", unique(x$url), ")", sep = "")
-  data.frame(Nome = name, Instituição = inst, uf = uf, Contribuição = number)
+  data.frame(Nome = name, Instituição = inst, uf = uf, Contribuição = number, n = sum(x$Contribuição))
 })
-pedology <- do.call(rbind, pedology)
+pedology <- rank(do.call(rbind, pedology)[, -3])
 knitr::kable(
-  rank(pedology[, -3]), format = "html", table.attr = "width='100%'", 
+  pedology[, -5], format = "html", table.attr = "width='100%'", 
   caption = "Classificação dos cientistas do solo que contribuíram com dados pedológicos de ferro do solo.")
 ```
 
@@ -78,11 +78,11 @@ edafology <- lapply(edafology, function (x) {
   name <- unique(x$Nome)
   inst <- unique(x$Instituição)
   number <- paste("[", sum(x$Contribuição), "](", unique(x$url), ")", sep = "")
-  data.frame(Nome = name, Instituição = inst, uf = uf, Contribuição = number)
+  data.frame(Nome = name, Instituição = inst, uf = uf, Contribuição = number, n = sum(x$Contribuição))
 })
-edafology <- do.call(rbind, edafology)
+edafology <- rank(do.call(rbind, edafology)[, -3])
 knitr::kable(
-  rank(edafology[, -3]), format = "html", table.attr = "width='100%'",
+  edafology[, -5], format = "html", table.attr = "width='100%'",
     caption = "Classificação dos cientistas do solo que contribuíram com dados edafológicos de ferro do solo.")
 ```
 
