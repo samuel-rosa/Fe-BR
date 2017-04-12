@@ -55,8 +55,15 @@ pedology <- lapply(pedology, function (x) {
 pedology <- rank(do.call(rbind, pedology)[, -3])
 knitr::kable(
   pedology[, -5], format = "html", table.attr = "width='100%'", 
-  caption = "Classificação dos cientistas do solo que contribuíram com dados pedológicos de ferro do solo.")
+  caption = "Classificação dos pesquisadores -- e instituições -- reponsáveis pelos conjuntos de dados pedológicos de ferro do solo.")
 ```
+
+Do ponto de vista das área de especialidade da Agronomia -- Ciência do Solo, definidas pelo Conselho Nacional 
+de Desenvolvimento Científico e Tecnológico 
+([CNPq](http://cnpq.br/documents/10157/186158/TabeladeAreasdoConhecimento.pdf)) e a Coordenação de
+Aperfeiçoamento de Pessoal de Nível Superior 
+([CAPES](http://www.capes.gov.br/avaliacao/instrumentos-de-apoio/tabela-de-areas-do-conhecimento-avaliacao)), 
+dados pedológicos enquadram-se na área de *Gênese, Morfologia e Classificação dos Solos*.
 
 ## Dados Edafológicos
 
@@ -83,8 +90,14 @@ edafology <- lapply(edafology, function (x) {
 edafology <- rank(do.call(rbind, edafology)[, -3])
 knitr::kable(
   edafology[, -5], format = "html", table.attr = "width='100%'",
-    caption = "Classificação dos cientistas do solo que contribuíram com dados edafológicos de ferro do solo.")
+    caption = "Classificação dos pesquisadores -- e instituições -- reponsáveis pelos conjuntos de dados edafológicos de ferro do solo.")
 ```
+
+Dentre as área de especialidade da Agronomia -- Ciência do Solo definidas pelo 
+[CNPq](http://cnpq.br/documents/10157/186158/TabeladeAreasdoConhecimento.pdf) e 
+[CAPES](http://www.capes.gov.br/avaliacao/instrumentos-de-apoio/tabela-de-areas-do-conhecimento-avaliacao), 
+dados pedológicos enquadram-se nas área de *Física do Solo*, *Química do Solo*, 
+*Microbiologia e Bioquímica do Solo*, *Fertilidade do Solo e Adubação* e *Manejo e Conservação do Solo*.
 
 ## Distribuição Territorial
 
