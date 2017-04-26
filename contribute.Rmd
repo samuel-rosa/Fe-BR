@@ -15,7 +15,7 @@ maneira possível.
 ## Forma de Submissão
 
 A forma de submissão dos dados depende do formato e do número de registros (número de amostras de horizontes e 
-camadas) que você tem em mãos:
+camadas, inclusive repetições de laboratório) que você tem em mãos:
 
 * Caso os dados estejam no formato analógico (relatórios, dissertações e teses), pedimos que você faça a sua
   digitalização usando o nosso modelo de planilha eletrônica que contém nomes padronizados para as variáveis
@@ -25,34 +25,41 @@ camadas) que você tem em mãos:
 * Mas se você tiver em mãos um volume muito grande de dados (> 1000 registros) já no formato digital, 
   envie-nos uma mensagem para estudarmos a forma mais apropriada para a sua submissão.
 
-Nosso modelo de planilha eletrônica para organização dos dados foi construído usando o mesmo padrão 
-internacional usado pelo World Soil Information Service ([WoSIS](http://www.isric.org/data/wosis)) -- o que 
-explica parcialmente o uso de termos em inglês. Versões para usuários de LibreOffice (formato ODS) e Microsoft 
-Office (formato XLS) podem ser descarregadas de:
+Nosso modelo de planilha eletrônica para organização dos dados foi construído usando padrões internacionais --
+veja o World Soil Information Service ([WoSIS](http://www.isric.org/data/wosis)). Versões para usuários de
+LibreOffice (formato ODS) e Microsoft Office (formato XLSX) podem ser descarregadas de:
 
 * LibreOffice: http://www.ufsm.br/febr/templates/template.ods
-* Microsoft Office: http://www.ufsm.br/febr/templates/template.xls
+* Microsoft Office: http://www.ufsm.br/febr/templates/template.xlsx
 
-A planilha eletrônica possui cinco abas (com nomes em inglês para facilitar seu tratamento computacional):
+Uma versão Google Sheets da planilha eletrônica, onde você pode fazer comentários e sugerir alterações, está
+disponível no endereço:
+
+* https://docs.google.com/spreadsheets/d/1w4LBQbLBFtnzRipFu8T4-rDszZSzahajLCyZWDkHQr0/edit?usp=sharing
+
+A planilha eletrônica possui cinco abas:
 
 * `README`: Aqui você encontra informações gerais sobre o preenchimento das demais abas.
-* `dataset`: Nesta aba você inclui as informações necessárias à identificação do conjunto de dados. São 18 os
+* `dataset`: Nesta aba você inclui as informações necessárias à identificação do conjunto de dados. São 19 os
   campos a ser preenchidos, mas você tem liberdade para acrescentar quaisquer informações que julgar
   pertinente. Essas informações são necessárias para garantir a apropriada citação do conjunto de dados no 
   futuro.
-* `metadata`: Aqui você encontra a definição e descrição dos campos a serem preenchidos nas abas `observation` 
-   e `layer`.
 * `observation`: Aqui você fornece informações sobre as observações do solo, tais como as coordenadas
   geográficas, a data de observação e a classificação do solo. Note que o termo `observation` é usado aqui
   fazendo referência à qualquer tipo de observação do solo, seja um perfil ou uma tradagem ou amostragem da
   camada superficial.
 * `layer`: Nessa aba você insere os dados das camadas ou horizontes amostradas e onde o conteúdo de ferro
   tenha sido determinado. Qualquer método analítico é aceito, sendo sua responsabilidade a apropriada 
-  identificação e descrição dos mesmos tanto nesta aba como na aba `metadata` (veja mais abaixo).
+  identificação e descrição dos mesmos tanto nesta aba como na aba `metadata`.
+* `metadata`: Aqui você encontra a definição e descrição dos campos das abas `observation` e `layer`.
   
 Você verá em cada uma das abas da planilha eletrônica o símbolo `(...)`. Esse símbolo indica a posição da aba
 em que você pode adicionar informações adicionais relacionadas ao conteúdo da respectiva aba. Entre em 
 [contato](contact.html) caso você tenha dúvidas sobre como inserir informações adicionais.
+
+Mais detalhes sobre o preenchimento da planilha eletrônica podem ser encontrados no relatório do projeto 
+disponível em https://www.authorea.com/165441/zjOuUh47z7bow2ouRnS9mQ.
+
 
 ## Métodos Analíticos
 

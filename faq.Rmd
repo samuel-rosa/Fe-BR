@@ -40,11 +40,6 @@ knitr::kable(tb)
 
 Note que 50 m é aproximadamente o raio de uma área quadrada de 1 ha.
 
-## Dados mineralógicos (DRX, Mössbauer, FTIR) e do conteúdo de Fe nas frações granulométricas são aceitos?
-
-Não, esse tipo de dado não é aceito. Nosso interesse único é no ***conteúdo*** de ferro no ***solo*** como
-um todo. Apenas dados quantitativos são aceitos.
-
 ## Como devo organizar dados de observações repetidas no tempo?
 
 A unidade básica de organização do repositório de dados de ferro do solo é a observação do solo. Uma 
@@ -109,11 +104,18 @@ Não, você não pode. Os dados do projeto RADAMBRASIL e similares já estão em
 
 ## Posso submeter dados com qualquer tipo de licença de uso?
 
-Não, você não pode. Somente são aceitas licenças de uso não-restritivas, que permitem a redistribuição, modificação, adaptação e criação a partir do conjunto de dado submetido, e que não obrigam o licenciamento dos trabalhos derivados sob os mesmos termos.
+Não, você não pode. Somente são aceitas licenças de uso não-restritivas, que permitem a redistribuição,
+modificação, adaptação e criação a partir do conjunto de dado submetido, e que não obrigam o licenciamento dos
+trabalhos derivados sob os mesmos termos.
 
-Contudo, você tem reservado o direito de decidir se os produtos derivados podem ou não ter fins comerciais. Além disso, todos os novos trabalhos derivados do conjunto de dados submetido devem atribuir o devido crédito ao autor da criação original.
+Contudo, você tem reservado o direito de decidir se os produtos derivados podem ou não ter fins comerciais, 
+desde que isso esteja previsto pelo órgão financiador. Nesse caso, a licença aplicável é 
+*CC BY-NC (Atribuição Não-Comercial)*. Contudo, se o conjunto de dados for fruto de financiamento público,
+então a licença aplicável é *CC BY (Atribuição)*. Segundo essas licenças, todos os novos trabalhos derivados 
+do conjunto de dados submetido devem atribuir o devido crédito ao autor da criação original.
 
-As licenças [Creative Commons](https://br.creativecommons.org/licencas/) CC BY (Atribuição) e CC BY-NC (Atribuição Não-Comercial) se enquadram nessas definições.
+Mais informações sobre as licenças podem ser encontradas na página do 
+[Creative Commons](https://br.creativecommons.org/licencas/).
 
 ## O que será feito com os dados submetidos?
 
