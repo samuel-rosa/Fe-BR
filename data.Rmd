@@ -47,15 +47,29 @@ pedology <- pedology[sapply(pedology, nrow) != 0]
 pedology <- lapply(pedology, function (x) {
   n <- nrow(x)
   uf <- ifelse(n == 27, "Brasil", x$UF)
-  name <- unique(x$Nome)
-  inst <- unique(x$Instituição)
+  # name <- unique(x$Nome)
+  # inst <- unique(x$Instituição)
+  title <- unique(x$Título)
   number <- paste("[", sum(x$Contribuição), "](", unique(x$url), ")", sep = "")
-  data.frame(Nome = name, Instituição = inst, uf = uf, Contribuição = number, n = sum(x$Contribuição))
+  data.frame(
+    # Nome = name,
+    # Instituição = inst,
+    Título = title,
+    uf = uf, 
+    Contribuição = number, 
+    n = sum(x$Contribuição))
 })
-pedology <- rank(do.call(rbind, pedology)[, -3])
+pedology <- rank(do.call(rbind, pedology)[, -2]) # uf
 knitr::kable(
-  pedology[, -5], format = "html", table.attr = "width='100%'", 
-  caption = "Classificação dos pesquisadores -- e instituições -- reponsáveis pelos conjuntos de dados pedológicos de ferro do solo. As contribuições podem ser descarregadas clicando no respectivo número de registros.")
+  pedology[, -4], # n
+  format = "html", table.attr = "width='100%'",
+  caption = paste(
+    "Classificação dos ",
+    # "pesquisadores -- e instituições -- reponsáveis pelos ",
+    "conjuntos de dados PEDOLÓGICOS de ferro do solo. As contribuições podem ser descarregadas clicando ",
+    "no respectivo número de registros.",
+    sep = "")
+  )
 ```
 
 Do ponto de vista das área de especialidade da Agronomia -- Ciência do Solo, definidas pelo Conselho Nacional 
@@ -82,15 +96,29 @@ edafology <- edafology[sapply(edafology, nrow) != 0]
 edafology <- lapply(edafology, function (x) {
   n <- nrow(x)
   uf <- ifelse(n == 27, "Brasil", x$UF)
-  name <- unique(x$Nome)
-  inst <- unique(x$Instituição)
+  # name <- unique(x$Nome)
+  # inst <- unique(x$Instituição)
+  title <- unique(x$Título)
   number <- paste("[", sum(x$Contribuição), "](", unique(x$url), ")", sep = "")
-  data.frame(Nome = name, Instituição = inst, uf = uf, Contribuição = number, n = sum(x$Contribuição))
+  data.frame(
+    # Nome = name, 
+    # Instituição = inst, 
+    Título = title,
+    uf = uf, 
+    Contribuição = number, 
+    n = sum(x$Contribuição))
 })
-edafology <- rank(do.call(rbind, edafology)[, -3])
+edafology <- rank(do.call(rbind, edafology)[, -2]) # uf
 knitr::kable(
-  edafology[, -5], format = "html", table.attr = "width='100%'",
-    caption = "Classificação dos pesquisadores -- e instituições -- reponsáveis pelos conjuntos de dados edafológicos de ferro do solo. As contribuições podem ser descarregadas clicando no respectivo número de registros.")
+  edafology[, -4], # n
+  format = "html", table.attr = "width='100%'",
+  caption = paste(
+    "Classificação dos ",
+    # "pesquisadores -- e instituições -- reponsáveis pelos ",
+    "conjuntos de dados EDAFOLÓGICOS de ferro do solo. As contribuições podem ser descarregadas clicando ",
+    "no respectivo número de registros.",
+    sep = "")
+)
 ```
 
 Dentre as área de especialidade da Agronomia -- Ciência do Solo definidas pelo 
