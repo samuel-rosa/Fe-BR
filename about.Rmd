@@ -77,45 +77,28 @@ no Brasil. (Saiba mais [aqui](http://lattes.cnpq.br/7251203817503318))
 Paulo possui as seguintes tarefas principais:
 
 1. Captação de dados junto à comunidade de física e conservação do solo, e 
-2. Elaboração da política de dados.
+2. Elaboração da política de dados e manutenção da infraestrutura de TI.
 
+<!--
 ## Jessé Rodrigo Fink
 
 `r imageWrap("images/jesse.jpg")`
 Jessé possui graduação em Agronomia pela Universidade Federal de Santa Maria (UFSM) e mestrado e doutorado em
-Ciências do Solo pela Universidade Federal do Rio Grande do Sul (UFRGS). Atualmente é professor do Instituto 
-Federal do Paraná (IFPR), Campus Palmas, onde ministra disciplinas na área de Ciência do Solo. Jessé 
+Ciências do Solo pela Universidade Federal do Rio Grande do Sul (UFRGS). Atualmente é professor do Instituto
+Federal do Paraná (IFPR), Campus Palmas, onde ministra disciplinas na área de Ciência do Solo. Jessé
 desenvolveu seu mestrado e doutorado com pesquisas relacionadas à mineralogia do solo, especificamente à
-adsorção de fósforo e mineralogia de óxidos de ferro. O doutorado sanduíche na Universidad de Córdoba 
+adsorção de fósforo e mineralogia de óxidos de ferro. O doutorado sanduíche na Universidad de Córdoba
 (Espanha) permitiu sua atuação/aprofundamento do conhecimento de técnicas espectroscópicas para o estudo de
 mineralogia de óxidos de ferro. Atualmente, Jessé tem desenvolvidos trabalhos na área de interface entre
 mineralogia e química do solo. Ainda, Jessé publicou recentemente trabalhos e revisões relacionando a
-importância da matéria orgânica na mineralogia e adsorção de fósforo no solo. (Saiba mais 
+importância da matéria orgânica na mineralogia e adsorção de fósforo no solo. (Saiba mais
 [aqui](http://lattes.cnpq.br/7275681112534211))
 
 As tarefas principais de Jessé são:
 
-1. Captação de dados junto à comunidade de química e mineralogia do solo, e 
+1. Captação de dados junto à comunidade de química e mineralogia do solo, e
 2. Definição de estratégias para harmonização dos dados em relação a métodos de referência.
-
-## Eloi Carvalho Ribeiro
-
-`r imageWrap("images/eloi.jpeg")`
-Eloi é um geoinformata, Mestre em Ciências dos Recursos Naturais e Engenharia Ambiental pelo Instituto 
-Politécnico de Castelo Branco, Portugal, possuindo ainda Diploma de Estudos Avançados em Sistema de Informação
-Geográfica (SIG) pela Universidade Politécnica de Valência, Espanha. Eloi trabalhou por vários anos na 
-manutenção de uma base de dados de incêndios florestais na Espanha. Em abril de 2013 ele ingressou no ISRIC, 
-onde passou a ser o responsável técnico pelo World Soil Information Service (WoSIS). Durante os últimos quatro
-anos, Eloi já conseguiu reunir todas as bases de dados dos diversos projetos do ISRIC, bem como agregar bases
-de dados de diversos países como Estados Unidos e Brasil, o que exigiu grande esforço para a padronização dos
-dados. Recentemente, Eloi publicou artigo relatando sua experiência à frente da construção e manutenção do
-WoSIS, tendo compartilhados essas experiências também no 1º Encontro Brasileiro de Pedometria em 2016. (Saiba 
-mais [aqui](http://www.isric.org/staff/E.%20%28Eloi%29%20Ribeiro))
-
-As tarefas de Elói são as seguintes:
-
-1. Compilação dos padrões de organização dos dados em planilhas eletrônicas, e  
-2. Análise das estratégias usadas para organização e distribuição dos dados.
+-->
 
 ## Stanley Robson de Medeiros Oliveira
 
@@ -134,4 +117,23 @@ Agropecuária. Suas linhas de pesquisa são 'mineração de dados', 'aprendizado
 As tarefas de Stanley são as seguintes:
 
 1. Suporte ao processamento dos dados do Sistema de Informação de Solos Brasileiros, e
+2. Análise das estratégias usadas para organização e distribuição dos dados.
+
+## Eloi Carvalho Ribeiro
+
+`r imageWrap("images/eloi.jpeg")`
+Eloi é um geoinformata, Mestre em Ciências dos Recursos Naturais e Engenharia Ambiental pelo Instituto 
+Politécnico de Castelo Branco, Portugal, possuindo ainda Diploma de Estudos Avançados em Sistema de Informação
+Geográfica (SIG) pela Universidade Politécnica de Valência, Espanha. Eloi trabalhou por vários anos na 
+manutenção de uma base de dados de incêndios florestais na Espanha. Em abril de 2013 ele ingressou no ISRIC, 
+onde passou a ser o responsável técnico pelo World Soil Information Service (WoSIS). Durante os últimos quatro
+anos, Eloi já conseguiu reunir todas as bases de dados dos diversos projetos do ISRIC, bem como agregar bases
+de dados de diversos países como Estados Unidos e Brasil, o que exigiu grande esforço para a padronização dos
+dados. Recentemente, Eloi publicou artigo relatando sua experiência à frente da construção e manutenção do
+WoSIS, tendo compartilhados essas experiências também no 1º Encontro Brasileiro de Pedometria em 2016. (Saiba 
+mais [aqui](http://www.isric.org/staff/E.%20%28Eloi%29%20Ribeiro))
+
+As tarefas de Elói são as seguintes:
+
+1. Definição de padrões de organização dos dados em planilhas eletrônicas, e  
 2. Análise das estratégias usadas para organização e distribuição dos dados.
