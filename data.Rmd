@@ -7,10 +7,13 @@ title: "Fe-BR: Repositório Brasileiro de Dados de Ferro do Solo"
 Aqui você fica sabendo mais sobre as contribuições com dados de ferro do solo que já recebemos. Mas antes de
 começar, é preciso esclarecer que as contribuições são classificadas de acordo com o tipo de dado, ou seja, 
 pedológicos ou edafológicos (veja mais informações abaixo). As duas maiores contribuições de cada tipo de dado 
-de ferro do solo serão premiadas com a coautoria de um artigo a ser submetido para publicação na revista 
+de ferro do solo, excluídos os conjuntos de dados descarregados do Sistema de Informação de Solos Brasileiros 
+([SISB](https://www.bdsolos.cnptia.embrapa.br/consulta_publica.html)) e aqueles produzidos no Setor de 
+Pedologia da Universidade Federal de Santa Maria (UFSM), serão premiadas com a coautoria de um artigo a ser
+submetido para publicação na revista 
 [Earth System Science Data](http://earth-system-science-data.net/) (Fator de Impacto > 8).
 
-Veja quem já contribuiu!
+Veja os conjuntos de dados que já temos disponíveis!
 
 ```{r, echo=FALSE}
 # Retornar o nome dos arquivos contendo as contribuições. Por padrão, o nome dos arquivos inicia com 'ctb'
