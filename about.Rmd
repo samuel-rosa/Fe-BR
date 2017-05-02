@@ -137,3 +137,15 @@ As tarefas de Elói são as seguintes:
 
 1. Definição de padrões de organização dos dados em planilhas eletrônicas, e  
 2. Análise das estratégias usadas para organização e distribuição dos dados.
+
+## Outras pessoas maravilhosas
+
+Nosso projeto não seria possível sem a ajuda de outras pessoas maravilhosas que dedicam um pouquinho do seu
+tempo para nos ajudar no processamento e organização dos dados. Nossos sinceros agradecimentos a:
+
+* Carlos Gustavo Tornquist, da Universidade Federal do Rio Grande do Sul
+* Gustavo Souza Valladares, da Universidade Federal do Piauí
+* Humberto Gonçalves dos Santos, da Embrapa Solos
+* Jessé Rodrigo Fink, do Instituto Federal do Paraná
+* Pablo Miguel, da Universidade Federal de Pelotas
+* Tiago Broetto
