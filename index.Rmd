@@ -40,7 +40,7 @@ Acredite, você tem muito a ganhar!
 
 Primeiro, além da enorme satisfação de colaborar com a comunidade científica e valorizar os dados produzidos 
 em suas atividades, aumentando as chances de ser citado, você terá a oportunidade de usar um repositório de 
-dados padronizados e georeferrenciados, com milhares de registros cobrindo o território nacional, para 
+dados padronizados e georreferenciados, com milhares de registros cobrindo o território nacional, para 
 exercitar sua criatividade científica. Por exemplo, você poderá:
 
 * Levantar dos métodos analíticos usados no Brasil e propor padronizações,
