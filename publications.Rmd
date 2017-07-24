@@ -1,0 +1,57 @@
+---
+title: "Fe-BR: Repositório Brasileiro de Dados de Ferro do Solo"
+---
+
+## PUBLICAÇÕES
+
+## Artigos
+
+1. **Adjustment of the coordinates of legacy soil profiles included in the Brazilian soil iron
+   data repository**
+    + Situação: em elaboração
+    + Acesso: [preprint](https://docs.google.com/document/d/1RyL0JHetWZ2NA3KNu5Y09ijq8Z0qZ2ZnFSY7ZaePYx0/edit?usp=sharing)
+
+2. **A data model for storing and sharing soil data in Brazil**
+    + Situação: em elaboração
+    + Acesso: [preprint](https://docs.google.com/document/d/1B7EzABdjv2KAKXBA6H3eP_dHyRP20B1aYE18SHfgiW4/edit?usp=sharing)
+
+## Livros
+
+1. **Pedologia Quantitativa feita Simples!**
+    + Situação: em elaboração
+    + Acesso: http://samuel-rosa.github.io/pedologia-quantitativa/
+
+2. **Repositório Brasileiro de Dados de Ferro do Solo**
+    + Situação: em elaboração
+    + Acesso: 
+
+
+## Programas
+
+1. **febr: Brazilian Soil Iron Data Repository**
+    + Linguagem/Plataforma: [R](https://www.r-project.org/)
+    + Acesso: https://github.com/samuel-rosa/febr
+
+2. **qgis-r: Spatial environmental modelling via QGIS-R integration**
+    + Linguagem/Plataforma: [R](https://www.r-project.org/), [Python](https://www.python.org/),
+      [QGIS](http://qgis.org/en/site/)
+    + Acesso: https://github.com/samuel-rosa/qgis-r
+
+## Resumos
+
+1. **Building a public repository of open soil iron data for Brazil**
+    + Evento: [Brazilian Soil Physics Meeting](http://cena.usp.br/bspm2017/)
+    + Local: Piracicaba, São Paulo, Brasil
+    + Acesso: https://www.researchgate.net/publication/318404672
+
+2. **Stacked generalization of statistical learners - a case study with soil iron content in
+   Brazil**
+    + Evento: [Pedometrics 2017](http://www.pedometrics2017.org/)
+    + Local: Wageningen, Gelderland, Holanda
+    + Acesso: https://www.researchgate.net/publication/318404748
+
+## Vídeos
+
+1. **Estimando as coordenadas de perfis do solo usando serviços de mapas online**
+    + Website: [YouTube](https://www.youtube.com/?gl=BR&hl=pt)
+    + Acesso: https://youtu.be/4UiJOfCJrds
