@@ -4,15 +4,28 @@ title: "Fe-BR: Repositório Brasileiro de Dados de Ferro do Solo"
 
 ## CONTRIBUIR
 
-Você pode contribuir com quaisquer dados de conteúdo de ferro do solo, seja qual for o método analítico usado,
-a forma e profundidade de amostragem, ou a localização geográfica das amostras analisadas, desde que esses
-dados sejam fruto de suas atividades e/ou estejam sob sua responsabilidade. Mas antes de preparar seu conjunto
+## Como Participar
+
+Você pode participar contribuindo com quaisquer dados de conteúdo de ferro do solo, seja qual for o método
+analítico usado, a forma e profundidade de amostragem, ou a localização geográfica das amostras analisadas. O
+único requisito é que os dados sejam fruto de suas atividades e/ou estejam sob sua responsabilidade. Veja
+[aqui](data.html) os conjuntos de dados já disponíveis no Fe-BR!
+
+Você também pode participar ajudando no processamento dos dados, corrigindo inconsistências, revisando nosso
+trabalho, encontrando coordenadas espaciais, enviando sugestões e, é claro, divulgando nosso projeto entre
+seus colegas. Você pode, inclusive, fazer da sua participação em nosso projeto o seu próprio projeto de
+pesquisa -- trabalho de conclusão de curso, monografia, dissertação, tese. Entre em [contato](contact.html) 
+conosco -- ou veja nossa lista de [desafios](https://goo.gl/7GegQH) -- para saber mais sobre as oportunidade de
+pesquisa do Fe-BR!
+
+## Forma de Submissão
+
+Mas antes de preparar seu conjunto
 de dados para contribuição, recomendamos que você leia atentamente as diretrizes abaixo e, caso restarem 
 dúvidas, veja a lista de [perguntas mais frequentes](faq.html) ou entre em [contato](contact.html) conosco.
 Assim poderemos discutir detalhes importantes e garantir que o seu (e o nosso) tempo seja gasto da melhor
 maneira possível.
 
-## Forma de Submissão
 
 A forma de submissão dos dados depende do formato e do número de registros (número de amostras de horizontes e 
 camadas, inclusive repetições de laboratório) que você tem em mãos:
@@ -91,14 +104,15 @@ Abaixo são apresentados os símbolos indicados para os principais extratores e 
 ```{r, echo=FALSE}
 method <-
   rbind(
-    mtd("`sulfurico`", "ácido sulfúrico"),
-    mtd("`oxalato`", "oxalato ácido de amônio"),
-    mtd("`ditionito`", "citrato-ditionito-bicarbonato"),
-    mtd("`pirofosfato`", "pirofosfato de sódio"),
-    mtd("`triacido`", "ácido perclórico + ácido nítrico + ácido fluorídrico"),
-    mtd("`dtpa`", "DTPA"),
-    mtd("`mehlich`", "Mehlich"),
-    mtd("`cloridrico`", "ácido clorídrico")
+    mtd("`aquaregia`",   "Ácido clorídrico + ácido nítrico"),
+    mtd("`cloridrico`",  "Ácido clorídrico"),
+    mtd("`dtpa`",        "DTPA"),
+    mtd("`ditionito`",   "Citrato-ditionito-bicarbonato"),
+    mtd("`mehlich`",     "Mehlich"),
+    mtd("`oxalato`",     "Oxalato ácido de amônio"),
+    mtd("`pirofosfato`", "Pirofosfato de sódio"),
+    mtd("`sulfurico`",   "Ácido sulfúrico"),
+    mtd("`triacido`",    "Ácido perclórico + ácido nítrico + ácido fluorídrico")
   )
 knitr::kable(
   method, format = "html", table.attr = "width='100%'", 
@@ -109,11 +123,12 @@ knitr::kable(
 ```{r, echo=FALSE}
 method <-
   rbind(
-    mtd("`eaa`", "espectrometria de absorção atômica"),
-    mtd("`edta`", "complexometria com EDTA"),
-    mtd("`eam`", "espectrometria de absorção molecular"),
-    mtd("`icpms`", "espectrometria de massa com plasma acoplado indutivamente"),
-    mtd("`icpoes`", "espectrometria de emissão atômica com plasma acoplado indutivamente")
+    mtd("`xxxxx`",  "Titrimetria de oxi-redução com dicromato de potássio"),
+    mtd("`eaa`",    "Espectrometria de absorção atômica"),
+    mtd("`edta`",   "Complexometria com EDTA"),
+    mtd("`eam`",    "Espectrometria de absorção molecular"),
+    mtd("`icpms`",  "Espectrometria de massa com plasma acoplado indutivamente"),
+    mtd("`icpoes`", "Espectrometria de emissão atômica com plasma acoplado indutivamente")
   )
 knitr::kable(
   method, format = "html", table.attr = "width='100%'", 
@@ -121,3 +136,29 @@ knitr::kable(
 ```
 
 
+<!-- ## O que você ganha com isso? -->
+
+<!-- Acredite, você tem muito a ganhar! -->
+
+<!-- Primeiro, além da enorme satisfação de colaborar com a comunidade científica e valorizar os dados produzidos  -->
+<!-- em suas atividades, aumentando as chances de ser citado, você terá a oportunidade de usar um repositório de  -->
+<!-- dados padronizados e georreferenciados, com milhares de registros cobrindo o território nacional, para  -->
+<!-- exercitar sua criatividade científica. Por exemplo, você poderá: -->
+
+<!-- * Levantar dos métodos analíticos usados no Brasil e propor padronizações, -->
+<!-- * Avaliar e propor mudanças em critérios de sistemas taxonômicos, -->
+<!-- * Produzir mapas para o seu estado ou todo o território brasileiro, -->
+<!-- * Identificar áreas prioritárias para novos estudos e amostragens, -->
+<!-- * E muitos mais. -->
+
+<!-- Lembre-se que ao colaborar conosco você também estará colaborando com a Política de Dados Abertos -->
+<!-- ([PDA](http://wiki.dados.gov.br/Politica-de-Dados-Abertos.ashx)). -->
+
+<!-- ***Mas não é só isso!*** Caso sua contribuição esteja entre as quatro maiores, ou você nos ajudar -->
+<!-- significativamente no processamento dos dados, você será agraciado com a coautoria de um artigo a ser  -->
+<!-- submetido para publicação na revista [Earth System Science Data](http://earth-system-science-data.net/)  -->
+<!-- (Fator de Impacto > 8). -->
+
+<!-- ***Quer mais?***  Fique muuuuito famoso com seu nome citado na página do projeto! -->
+
+<!-- Estamos contando com sua contribuição! -->
