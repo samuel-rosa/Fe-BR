@@ -20,35 +20,22 @@ pesquisa do Fe-BR!
 
 ## Forma de Submissão
 
-Mas antes de preparar seu conjunto
-de dados para contribuição, recomendamos que você leia atentamente as diretrizes abaixo e, caso restarem 
-dúvidas, veja a lista de [perguntas mais frequentes](faq.html) ou entre em [contato](contact.html) conosco.
-Assim poderemos discutir detalhes importantes e garantir que o seu (e o nosso) tempo seja gasto da melhor
-maneira possível.
+Antes de preparar seu conjunto de dados para submissão, recomendamos que você leia atentamente as diretrizes
+abaixo e, caso restarem dúvidas, veja a lista de [perguntas mais frequentes](faq.html) ou entre em
+[contato](contact.html) conosco.
 
-
-A forma de submissão dos dados depende do formato e do número de registros (número de amostras de horizontes e 
-camadas, inclusive repetições de laboratório) que você tem em mãos:
-
-* Caso os dados estejam no formato analógico (relatórios, dissertações e teses), pedimos que você faça a sua
-  digitalização usando o nosso modelo de planilha eletrônica que contém nomes padronizados para as variáveis
-  (veja abaixo).
-* Se os dados já estiverem no formato digital e o número de registros for pequeno (< 1000 registros), pedimos
-  que os mesmos sejam organizados usando também o nosso modelo de planilha eletrônica.
-* Mas se você tiver em mãos um volume muito grande de dados (> 1000 registros) já no formato digital, 
-  envie-nos uma mensagem para estudarmos a forma mais apropriada para a sua submissão.
-
-Nosso modelo de planilha eletrônica para organização dos dados foi construído usando padrões internacionais --
-veja o World Soil Information Service ([WoSIS](http://www.isric.org/data/wosis)). Versões para usuários de
-LibreOffice (formato ODS) e Microsoft Office (formato XLSX) podem ser descarregadas de:
+A forma de submissão preferencial dos dados é via planilha eletrônica. Para isso, preparamos um ***modelo de
+planilha eletrônica*** usando os padrões internacionais da [WoSIS](http://www.isric.org/data/wosis) e que contém
+estrutura compatível com a estrutura do próprio Fe-BR. Versões para usuários de LibreOffice (formato ODS) e
+Microsoft Office (formato XLSX) podem ser descarregadas de:
 
 * LibreOffice: http://www.ufsm.br/febr/templates/template.ods
 * Microsoft Office: http://www.ufsm.br/febr/templates/template.xlsx
 
-Uma versão Google Sheets da planilha eletrônica, onde você pode fazer comentários e sugerir alterações, está
-disponível no endereço:
+Uma versão Google Sheets do modelo de planilha eletrônica, onde você pode fazer comentários e sugerir 
+alterações, está disponível no seguinte endereço:
 
-* https://docs.google.com/spreadsheets/d/1w4LBQbLBFtnzRipFu8T4-rDszZSzahajLCyZWDkHQr0/edit?usp=sharing
+* https://drive.google.com/drive/folders/0B7xsLbrOA23oWjdISS0tazliMVk?usp=sharing
 
 A planilha eletrônica possui cinco abas:
 
@@ -57,26 +44,25 @@ A planilha eletrônica possui cinco abas:
   campos a ser preenchidos, mas você tem liberdade para acrescentar quaisquer informações que julgar
   pertinente. Essas informações são necessárias para garantir a apropriada citação do conjunto de dados no 
   futuro.
-* `observation`: Aqui você fornece informações sobre as observações do solo, tais como as coordenadas
-  geográficas, a data de observação e a classificação do solo. Note que o termo `observation` é usado aqui
+* `observacao`: Aqui você fornece informações sobre as observações do solo, tais como as coordenadas
+  geográficas, a data de observação e a classificação do solo. Note que o termo `observacao` é usado aqui
   fazendo referência à qualquer tipo de observação do solo, seja um perfil ou uma tradagem ou amostragem da
   camada superficial.
-* `layer`: Nessa aba você insere os dados das camadas ou horizontes amostradas e onde o conteúdo de ferro
+* `camada`: Nessa aba você insere os dados das camadas ou horizontes amostradas e onde o conteúdo de ferro
   tenha sido determinado. Qualquer método analítico é aceito, sendo sua responsabilidade a apropriada 
-  identificação e descrição dos mesmos tanto nesta aba como na aba `metadata`.
-* `metadata`: Aqui você encontra a definição e descrição dos campos das abas `observation` e `layer`.
+  identificação e descrição dos mesmos tanto nesta aba como na aba `metadado`.
+* `metadado`: Aqui você encontra a definição e descrição dos campos das abas `observacao` e `camada`.
   
 Você verá em cada uma das abas da planilha eletrônica o símbolo `(...)`. Esse símbolo indica a posição da aba
 em que você pode adicionar informações adicionais relacionadas ao conteúdo da respectiva aba. Entre em 
 [contato](contact.html) caso você tenha dúvidas sobre como inserir informações adicionais.
 
-Mais detalhes sobre o preenchimento da planilha eletrônica podem ser encontrados no relatório do projeto 
-disponível em https://www.authorea.com/165441/zjOuUh47z7bow2ouRnS9mQ.
-
+Mais detalhes sobre o preenchimento da planilha eletrônica podem ser encontrados no livro do Fe-BR disponível 
+em https://samuel-rosa.github.io/febr-book/.
 
 ## Métodos Analíticos
 
-A identificação dos dados de conteúdo de ferro na aba `layer` é feita usando símbolos que se referem ao tipo
+A identificação dos dados de conteúdo de ferro na aba `camada` é feita usando símbolos que se referem ao tipo
 de extrator ou complexante usado e ao método de determinação. Esse tipo de identificação é importante por dois
 motivos:
 
@@ -95,11 +81,14 @@ refere-se ao conteúdo de ferro determinado por espectrometria de absorção at�
 ```{r, echo=FALSE}
 mtd <- 
   function (symbol, method) {
-    data.frame(Símbolo = symbol, Descrição = method)
+    data.frame(Código = symbol, Descrição = method)
   }
 ```
 
-Abaixo são apresentados os símbolos indicados para os principais extratores e complexantes e métodos de determinação. Note que nossas listas de símbolos não são exaustivas. Entre em [contato](contact.html) conosco caso você use métodos analíticos diferentes daqueles apresentados aqui para que possamos definir os símbolos mais apropriados. Lembre que o sucesso de nosso projeto depende da sua colaboração!
+Abaixo são apresentados os códigos indicados para os principais extratores e complexantes e métodos de
+determinação. Note que nossas listas de códigos não são exaustivas. Entre em [contato](contact.html) conosco 
+caso você use métodos analíticos diferentes daqueles apresentados aqui para que possamos definir os códigos 
+mais apropriados. Lembre que o sucesso de nosso projeto depende da sua colaboração!
 
 ```{r, echo=FALSE}
 method <-
@@ -116,7 +105,7 @@ method <-
   )
 knitr::kable(
   method, format = "html", table.attr = "width='100%'", 
-  caption = "Símbolos indicados para os principais extratores e complexantes.")
+  caption = "Códigos indicados para os principais extratores e complexantes.")
 ```
 
 
@@ -132,33 +121,35 @@ method <-
   )
 knitr::kable(
   method, format = "html", table.attr = "width='100%'", 
-  caption = "Símbolos indicados para os principais métodos de determinação.")
+  caption = "Códigos indicados para os principais métodos de determinação.")
 ```
 
 
-<!-- ## O que você ganha com isso? -->
+<!-- 
+## O que você ganha com isso?
 
-<!-- Acredite, você tem muito a ganhar! -->
+Acredite, você tem muito a ganhar!
 
-<!-- Primeiro, além da enorme satisfação de colaborar com a comunidade científica e valorizar os dados produzidos  -->
-<!-- em suas atividades, aumentando as chances de ser citado, você terá a oportunidade de usar um repositório de  -->
-<!-- dados padronizados e georreferenciados, com milhares de registros cobrindo o território nacional, para  -->
-<!-- exercitar sua criatividade científica. Por exemplo, você poderá: -->
+Primeiro, além da enorme satisfação de colaborar com a comunidade científica e valorizar os dados produzidos
+em suas atividades, aumentando as chances de ser citado, você terá a oportunidade de usar um repositório de
+dados padronizados e georreferenciados, com milhares de registros cobrindo o território nacional, para
+exercitar sua criatividade científica. Por exemplo, você poderá:
 
-<!-- * Levantar dos métodos analíticos usados no Brasil e propor padronizações, -->
-<!-- * Avaliar e propor mudanças em critérios de sistemas taxonômicos, -->
-<!-- * Produzir mapas para o seu estado ou todo o território brasileiro, -->
-<!-- * Identificar áreas prioritárias para novos estudos e amostragens, -->
-<!-- * E muitos mais. -->
+* Levantar dos métodos analíticos usados no Brasil e propor padronizações,
+* Avaliar e propor mudanças em critérios de sistemas taxonômicos,
+* Produzir mapas para o seu estado ou todo o território brasileiro,
+* Identificar áreas prioritárias para novos estudos e amostragens,
+* E muitos mais.
 
-<!-- Lembre-se que ao colaborar conosco você também estará colaborando com a Política de Dados Abertos -->
-<!-- ([PDA](http://wiki.dados.gov.br/Politica-de-Dados-Abertos.ashx)). -->
+Lembre-se que ao colaborar conosco você também estará colaborando com a Política de Dados Abertos
+([PDA](http://wiki.dados.gov.br/Politica-de-Dados-Abertos.ashx)).
 
-<!-- ***Mas não é só isso!*** Caso sua contribuição esteja entre as quatro maiores, ou você nos ajudar -->
-<!-- significativamente no processamento dos dados, você será agraciado com a coautoria de um artigo a ser  -->
-<!-- submetido para publicação na revista [Earth System Science Data](http://earth-system-science-data.net/)  -->
-<!-- (Fator de Impacto > 8). -->
+***Mas não é só isso!*** Caso sua contribuição esteja entre as quatro maiores, ou você nos ajudar
+significativamente no processamento dos dados, você será agraciado com a coautoria de um artigo a ser
+submetido para publicação na revista [Earth System Science Data](http://earth-system-science-data.net/)
+(Fator de Impacto > 8).
 
-<!-- ***Quer mais?***  Fique muuuuito famoso com seu nome citado na página do projeto! -->
+***Quer mais?***  Fique muuuuito famoso com seu nome citado na página do projeto!
 
-<!-- Estamos contando com sua contribuição! -->
+Estamos contando com sua contribuição!
+-->
