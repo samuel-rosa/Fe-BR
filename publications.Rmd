@@ -4,16 +4,25 @@ title: "Fe-BR: Repositório Brasileiro de Dados de Ferro do Solo"
 
 ## PUBLICAÇÕES
 
+O Fe-BR oferece uma série de oportunidades de pesquisa. Por exemplo, você poderia, entre outras coisas:
+
+* Levantar os métodos analíticos usados no Brasil e propor estratégias de padronização,
+* Avaliar e propor mudanças de critérios de sistemas taxonômicos,
+* Produzir mapas para o seu estado ou todo o território brasileiro,
+* Identificar áreas prioritárias para novos estudos e amostragens.
+
+Veja abaixo os trabalhos já publicados como parte do desenvolvimento do Fe-BR.
+
 ## Artigos
 
-1. **Adjustment of the coordinates of legacy soil profiles included in the Brazilian soil iron
-   data repository**
+1. **Adjustment of the coordinates of legacy soil profiles included in the Brazilian soil iron data 
+   repository**
     + Situação: em elaboração
-    + Acesso: [preprint](https://docs.google.com/document/d/1RyL0JHetWZ2NA3KNu5Y09ijq8Z0qZ2ZnFSY7ZaePYx0/edit?usp=sharing)
+    + Acesso: [preprint](https://goo.gl/K2ChgC)
 
 2. **A data model for storing and sharing soil data in Brazil**
     + Situação: em elaboração
-    + Acesso: [preprint](https://docs.google.com/document/d/1B7EzABdjv2KAKXBA6H3eP_dHyRP20B1aYE18SHfgiW4/edit?usp=sharing)
+    + Acesso: [preprint](https://goo.gl/7X53AZ)
 
 ## Livros
 
@@ -23,8 +32,7 @@ title: "Fe-BR: Repositório Brasileiro de Dados de Ferro do Solo"
 
 2. **Repositório Brasileiro de Dados de Ferro do Solo**
     + Situação: em elaboração
-    + Acesso: 
-
+    + Acesso: https://samuel-rosa.github.io/febr-book/
 
 ## Programas
 
@@ -44,8 +52,7 @@ title: "Fe-BR: Repositório Brasileiro de Dados de Ferro do Solo"
     + Local: Piracicaba, São Paulo, Brasil
     + Acesso: https://www.researchgate.net/publication/318404672
 
-2. **Stacked generalization of statistical learners - a case study with soil iron content in
-   Brazil**
+2. **Stacked generalization of statistical learners - a case study with soil iron content in Brazil**
     + Evento: [Pedometrics 2017](http://www.pedometrics2017.org/)
     + Local: Wageningen, Gelderland, Holanda
     + Acesso: https://www.researchgate.net/publication/318404748
