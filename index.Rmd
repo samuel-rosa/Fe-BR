@@ -18,7 +18,7 @@ avançados de recomendação que assegurem o uso mais eficiente de fertilizantes
 políticas públicas de uso e ocupação do solo que respeitem as reais capacidades desse precioso e não-renovável
 bem natural.
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, warning=FALSE}
 ds <- suppressMessages(googlesheets::gs_key("1Z0JwcmRRUDCyTB9yFlvHPsN6mCSQPzSczIOv88SPtcw", verbose = FALSE))
 ds <- suppressMessages(googlesheets::gs_read_csv(ds, verbose = FALSE))
 ```
