@@ -13,17 +13,19 @@ O Fe-BR oferece uma série de oportunidades de pesquisa. Por exemplo, você pode
 
 Veja abaixo os trabalhos já publicados como parte do desenvolvimento do Fe-BR.
 
+<!-- 
 ## Artigos
 
 1. **Adjustment of the coordinates of legacy soil profiles included in the Brazilian soil iron data 
    repository**
     + Situação: em elaboração
-    + Acesso: [preprint](https://goo.gl/K2ChgC)
+    + Acesso: [versão de pré-impressão](https://goo.gl/K2ChgC)
 
 2. **A data model for storing and sharing soil data in Brazil**
     + Situação: em elaboração
-    + Acesso: [preprint](https://goo.gl/7X53AZ)
-
+    + Acesso: [versão de pré-impressão](https://goo.gl/7X53AZ)
+-->
+ 
 ## Livros
 
 1. **Pedologia Quantitativa feita Simples!**
