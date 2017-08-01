@@ -41,6 +41,8 @@ unidade amostral básica é definida como sendo um horizonte. Os limites superio
 costumam ser definidos com base na observação de características relacionadas aos processos de formação do 
 solo.
 
+<br>
+
 ```{r, echo=FALSE}
 # Identificar as contribuições pedológicas
 pedology <- lapply(ctb, function (x) x[x$Tipo == "PEDOLÓGICO", ])
@@ -71,7 +73,7 @@ pedology <- rank(do.call(rbind, pedology)[, -5]) # uf
 # DT::datatable(pedology[, -4], rownames = FALSE, escape = FALSE)
 DT::datatable(
   unique(pedology[, -c(1, 7)]), rownames = FALSE, escape = FALSE, 
-  options = list(language = list(url = '//cdn.datatables.net/plug-ins/1.10.11/i18n/Portuguese.json')))
+  options = list(language = list(url = '//cdn.datatables.net/plug-ins/1.10.11/i18n/Portuguese-Brasil.json')))
 ```
 
 <!--
@@ -92,6 +94,8 @@ fertilidade, física, conservação, biologia, entre outros. Os dados edafológi
 o mapeamento do solo. Contudo, diferente dos dados pedológicos, a unidade amostral básica do solo para 
 obtenção de dados edafológicos é definida como sendo uma camada. As dimensões de uma camada amostral costumam 
 ser definidas com base em critérios operacionais ou padrões mais ou menos aceitos pela comunidade científica.
+
+<br>
 
 ```{r, echo=FALSE}
 # Identificar as contribuições pedológicas
@@ -122,7 +126,7 @@ edafology <- lapply(edafology, function (x) {
 edafology <- rank(do.call(rbind, edafology)[, -5]) # uf
 DT::datatable(
   unique(edafology[, -c(1, 7)]), rownames = FALSE, escape = FALSE,
-  options = list(language = list(url = '//cdn.datatables.net/plug-ins/1.10.11/i18n/Portuguese.json')))
+  options = list(language = list(url = '//cdn.datatables.net/plug-ins/1.10.11/i18n/Portuguese-Brasil.json')))
 ```
 
 <!--
@@ -149,26 +153,49 @@ tmp <- sp::spTransform(
 states$d <- states$n / (rgeos::gArea(tmp, byid = TRUE) / 1e6)
 ```
 
-A figura abaixo mostra, para cada uma das unidades da federação, o número de registros -- dados de horizontes 
-e camadas, inclusive repetições de laboratório -- que processamos até agora. Entre em [contato](contact.html) 
-conosco caso você -- ou alguém que você conhece -- tenha disponibilidade para ajudar no processamento dos
-dado do seu estado.
+A figura abaixo mostra, para cada uma das unidades federativas (UF) do Brasil, o número (painel esquerdo) e 
+densidade (painel direito) de registros -- dados de horizontes e camadas, inclusive repetições de laboratório 
+-- que processamos até agora. `r states$uf[which.max(states$n)]` concentra o maior número de registros
+processados até agora (`r max(states$n)`), enquanto `r states$uf[which.min(states$n)]` possui o menor número
+de registros (`r min(states$n)`) processados. No que diz respeito à densidade de registros, ou seja, o 
+número de registros por quilômetro quadrado, `r states$uf[which.max(states$d)]` é a UF melhor representada 
+(`r round(max(states$d), 4)`), enquanto `r states$uf[which.min(states$d)]` é a UF que carece de maior atenção,
+apresentando densidade de apenas $`r round(min(states$d), 6)`$ registros por quilômetro quadrado.
 
 <!--
-`r states$uf[which.max(states$n)]` concentra o maior número de registros até agora (`r max(states$n)`), 
-enquanto `r states$uf[which.min(states$n)]` possui o menor número de registros (`r min(states$n)`) no 
-repositório de dados de ferro do solo. 
 `r if(states$uf[which.max(states$n)] == "MG") paste("É interessante que MG tenha o maior número de registro, sendo o estado brasileiro onde os maiores valores de conteúdo de ferro do solo costumam ser reportados.")`
 `r if(states$uf[which.min(states$n)] == "TO") paste("No caso do TO, o reduzido número de registros deve-se", "ao fato de muitos estudos terem sido realizados antes da sua emancipação em 5 de outubro de 1988.")`
 `r if("RJ" %in% states@data[order(states$n, decreasing = TRUE), ]$uf[1:5]) paste("O fato de o RJ estar entre os cinco estados com maior número de registros (", states$n[which(states$uf == "RJ")], ") sugere uma maior atividade dos órgãos oficiais de pesquisa pedológica como a Embrapa Solos em seu estado sede.", sep = "")`
 -->
 
-```{r, echo=FALSE}
-sp::spplot(
-  states, "n", col.regions = rev(terrain.colors(100)), scales = list(draw = TRUE), 
-  # main = expression(Número~de~registros~processados~(n)), 
-  xlab = "Longitude", ylab = "Latitude")
+```{r, echo=FALSE, fig.width=9}
+p1 <- 
+  sp::spplot(
+  states, "n", col.regions = rev(terrain.colors(100)), #scales = list(draw = TRUE, cex = 0.5),
+  # main = expression(Número~de~registros~processados~(n))
+  sub = expression(Número~de~registros~(n)), colorkey = list(space = "bottom"),
+  panel = function (...) {
+    sp::panel.polygonsplot(...)
+    lattice::panel.grid(v = -1, h = -1, lty = "dotted")
+  }
+  # xlab = "Longitude", ylab = "Latitude"
+  )
+p2 <- sp::spplot(
+  states, "d", col.regions = rev(terrain.colors(100)), #scales = list(draw = TRUE, cex = 0.5),
+  # main = expression(Densidade~de~registros~processados~(n/km^2)) 
+  sub = expression(Densidade~de~registros~(n/km^2)), colorkey = list(space = "bottom"),
+  panel = function (...) {
+    sp::panel.polygonsplot(...)
+    lattice::panel.grid(v = -1, h = -1, lty = "dotted")
+  }
+  # xlab = "Longitude", ylab = "Latitude"
+  )
+print(p1, split = c(1, 1, 2, 1), more = TRUE)
+print(p2, split = c(2, 1, 2, 1))
 ```
+
+Entre em <a href="mailto:fe-br@googlegroups.com">contato</a> conosco caso você -- ou alguém que você conhece 
+-- tenha disponibilidade para nos ajudar no processamento ou compartilhar dados da sua UF.
 
 <!--
 A figura muda quando olhamos para a densidade de registros, ou seja, o número de registros por quilômetro
@@ -181,6 +208,6 @@ menor densidade de registros por quilômetro quadrado ($`r round(min(states$d), 
 ```{r, echo=FALSE}
 # sp::spplot(
 #   states, "d", col.regions = rev(terrain.colors(100)), scales = list(draw = TRUE),
-#   main = expression(Densidade~de~registros~processados~(n/km^2)), xlab = "Longitude", 
+#   main = expression(Densidade~de~registros~processados~(n/km^2)), xlab = "Longitude",
 #   ylab = "Latitude")
 ```
