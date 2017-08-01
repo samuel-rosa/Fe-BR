@@ -2,7 +2,7 @@
 title: "Fe-BR: Repositório Brasileiro de Dados de Ferro do Solo"
 ---
 
-## EQUIPE
+## SOBRE
 
 ```{r, echo=FALSE}
 imageWrap <-
@@ -42,6 +42,8 @@ As tarefas principais de Alessandro são:
 1. Captação de dados junto à comunidade de cientistas do solo brasileira, e
 2. Concepção, construção, manutenção e divulgação do repositório de dados.
 
+E-mail: alessandrosamuel@mail.ufsm.br
+
 ## Ricardo Simão Diniz Dalmolin
 
 `r imageWrap("images/dalmolin.jpeg")`
@@ -60,6 +62,8 @@ As principais tarefas de Ricardo são:
 
 1. Supervisão do projeto, e
 2. Captação de dados junto à comunidade de pedologia quali- e quantitativa.
+
+E-mail: dalmolin@ufsm.br
 
 ## Paulo Ivonir Gubiani
 
@@ -99,6 +103,26 @@ As tarefas principais de Jessé são:
 1. Captação de dados junto à comunidade de química e mineralogia do solo, e
 2. Definição de estratégias para harmonização dos dados em relação a métodos de referência.
 -->
+
+## Nícolas Augusto Rosin
+
+`r imageWrap("images/nicolas.jpg")`
+Nícolas é acadêmico do curso de Agronomia na Universidade Federal de Santa Maria (UFSM) e bolsista de 
+Iniciação Científica no Laboratório de Pedologia, atuando na área de levantamento e classificação de solos, 
+assim como pedometria. Possui experiência na área da Agronomia com ênfase em Ciência do Solo.
+(Saiba mais [aqui](http://lattes.cnpq.br/8013808194359269))
+
+<br>
+<br>
+<br>
+<br>
+
+As principais tarefas de Nícolas são:
+
+1. Processamento e organização dos conjuntos de dados;
+2. Organização e verificação dos metadados.
+
+E-mail: nicolasaugustorosin@gmail.com
 
 ## Stanley Robson de Medeiros Oliveira
 
@@ -140,12 +164,15 @@ As tarefas de Elói são as seguintes:
 
 ## Outras pessoas maravilhosas
 
-Nosso projeto não seria possível sem a ajuda de outras pessoas maravilhosas que dedicam um pouquinho do seu
-tempo para nos ajudar no processamento e organização dos dados. Nossos sinceros agradecimentos a:
+O Fe-BR não seria possível sem a ajuda de outras pessoas maravilhosas que dedicam um pouquinho do seu tempo 
+para nos ajudar no processamento e organização dos dados. Nossos sinceros agradecimentos a:
 
 * Carlos Gustavo Tornquist, da Universidade Federal do Rio Grande do Sul
 * Gustavo Souza Valladares, da Universidade Federal do Piauí
 * Humberto Gonçalves dos Santos, da Embrapa Solos
 * Jessé Rodrigo Fink, do Instituto Federal do Paraná
+* Joao Herbert Moreira Viana, da Embrapa Milho e Sorgo
+* Nelida Quiñonez, da Universidade Estadual Paulista
 * Pablo Miguel, da Universidade Federal de Pelotas
 * Tiago Broetto
+* Wenceslau Geraldes Teixeira, da Embrapa Solos
