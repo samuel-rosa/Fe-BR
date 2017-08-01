@@ -4,6 +4,8 @@ title: "Fe-BR: Repositório Brasileiro de Dados de Ferro do Solo"
 
 ## CONTRIBUIR
 
+<br>
+
 ## Como Participar
 
 Você pode participar contribuindo com quaisquer dados de conteúdo de ferro do solo, seja qual for o método
@@ -14,26 +16,31 @@ analítico usado, a forma e profundidade de amostragem, ou a localização geogr
 Você também pode participar ajudando no processamento dos dados, corrigindo inconsistências, revisando nosso
 trabalho, encontrando coordenadas espaciais, enviando sugestões e, é claro, divulgando nosso projeto entre
 seus colegas. Você pode, inclusive, fazer da sua participação em nosso projeto o seu próprio projeto de
-pesquisa -- trabalho de conclusão de curso, monografia, dissertação, tese. Entre em [contato](contact.html) 
-conosco -- ou veja nossa lista de [desafios](https://goo.gl/7GegQH) -- para saber mais sobre as oportunidade de
-pesquisa do Fe-BR!
+pesquisa -- trabalho de conclusão de curso, monografia, dissertação, tese. Veja a 
+[lista](https://goo.gl/tVC8dH) de conjuntos de dados que ainda precisam ser processados ou entre em
+<a href="mailto:fe-br@googlegroups.com">contato</a> conosco para saber mais sobre as 
+[oportunidades](publications.html) de pesquisa.
+
+<!-- [desafios](https://goo.gl/7GegQH) -->
+
+<br>
 
 ## Forma de Submissão
 
 Antes de preparar seu conjunto de dados para submissão, recomendamos que você leia atentamente as diretrizes
 abaixo e, caso restarem dúvidas, veja a lista de [perguntas mais frequentes](faq.html) ou entre em
-[contato](contact.html) conosco.
+<a href="mailto:fe-br@googlegroups.com">contato</a> conosco.
 
 A forma de submissão preferencial dos dados é via planilha eletrônica. Para isso, preparamos um ***modelo de
-planilha eletrônica*** usando os padrões internacionais da [WoSIS](http://www.isric.org/data/wosis) e que contém
-estrutura compatível com a estrutura do próprio Fe-BR. Versões para usuários de LibreOffice (formato ODS) e
-Microsoft Office (formato XLSX) podem ser descarregadas de:
+planilha eletrônica*** usando os padrões internacionais da [WoSIS](http://www.isric.org/data/wosis) e que 
+contém estrutura compatível com a estrutura do próprio Fe-BR. Versões para usuários de LibreOffice 
+(formato ODS) e Microsoft Office (formato XLSX) podem ser descarregadas de:
 
 * LibreOffice: http://www.ufsm.br/febr/templates/template.ods
 * Microsoft Office: http://www.ufsm.br/febr/templates/template.xlsx
 
-Uma versão Google Sheets do modelo de planilha eletrônica, onde você pode fazer comentários e sugerir 
-alterações, está disponível no seguinte endereço:
+Uma versão Google Sheets da planilha eletrônica modelo, onde você pode fazer comentários e sugerir alterações,
+está disponível no seguinte endereço:
 
 * https://drive.google.com/drive/folders/0B7xsLbrOA23oWjdISS0tazliMVk?usp=sharing
 
@@ -55,10 +62,15 @@ A planilha eletrônica possui cinco abas:
   
 Você verá em cada uma das abas da planilha eletrônica o símbolo `(...)`. Esse símbolo indica a posição da aba
 em que você pode adicionar informações adicionais relacionadas ao conteúdo da respectiva aba. Entre em 
-[contato](contact.html) caso você tenha dúvidas sobre como inserir informações adicionais.
+<a href="mailto:fe-br@googlegroups.com">contato</a> caso você tenha dúvidas sobre como inserir informações
+adicionais.
 
-Mais detalhes sobre o preenchimento da planilha eletrônica podem ser encontrados no livro do Fe-BR disponível 
+<!-- 
+Mais detalhes sobre o preenchimento da planilha eletrônica podem ser encontrados no livro do Fe-BR disponível  
 em https://samuel-rosa.github.io/febr-book/.
+-->
+
+<br>
 
 ## Métodos Analíticos
 
@@ -86,9 +98,10 @@ mtd <-
 ```
 
 Abaixo são apresentados os códigos indicados para os principais extratores e complexantes e métodos de
-determinação. Note que nossas listas de códigos não são exaustivas. Entre em [contato](contact.html) conosco 
-caso você use métodos analíticos diferentes daqueles apresentados aqui para que possamos definir os códigos 
-mais apropriados. Lembre que o sucesso de nosso projeto depende da sua colaboração!
+determinação. Note que nossas listas de códigos não são exaustivas. Entre em 
+<a href="mailto:fe-br@googlegroups.com">contato</a> conosco caso você use métodos analíticos diferentes 
+daqueles apresentados aqui para que possamos definir os códigos mais apropriados. Lembre que o sucesso de 
+nosso projeto depende da sua colaboração!
 
 ```{r, echo=FALSE}
 method <-
@@ -108,6 +121,7 @@ knitr::kable(
   caption = "Códigos indicados para os principais extratores e complexantes.")
 ```
 
+<br>
 
 ```{r, echo=FALSE}
 method <-
@@ -123,33 +137,3 @@ knitr::kable(
   method, format = "html", table.attr = "width='100%'", 
   caption = "Códigos indicados para os principais métodos de determinação.")
 ```
-
-
-<!-- 
-## O que você ganha com isso?
-
-Acredite, você tem muito a ganhar!
-
-Primeiro, além da enorme satisfação de colaborar com a comunidade científica e valorizar os dados produzidos
-em suas atividades, aumentando as chances de ser citado, você terá a oportunidade de usar um repositório de
-dados padronizados e georreferenciados, com milhares de registros cobrindo o território nacional, para
-exercitar sua criatividade científica. Por exemplo, você poderá:
-
-* Levantar dos métodos analíticos usados no Brasil e propor padronizações,
-* Avaliar e propor mudanças em critérios de sistemas taxonômicos,
-* Produzir mapas para o seu estado ou todo o território brasileiro,
-* Identificar áreas prioritárias para novos estudos e amostragens,
-* E muitos mais.
-
-Lembre-se que ao colaborar conosco você também estará colaborando com a Política de Dados Abertos
-([PDA](http://wiki.dados.gov.br/Politica-de-Dados-Abertos.ashx)).
-
-***Mas não é só isso!*** Caso sua contribuição esteja entre as quatro maiores, ou você nos ajudar
-significativamente no processamento dos dados, você será agraciado com a coautoria de um artigo a ser
-submetido para publicação na revista [Earth System Science Data](http://earth-system-science-data.net/)
-(Fator de Impacto > 8).
-
-***Quer mais?***  Fique muuuuito famoso com seu nome citado na página do projeto!
-
-Estamos contando com sua contribuição!
--->
