@@ -5,8 +5,8 @@ title: "Fe-BR: Repositório Brasileiro de Dados de Ferro do Solo"
 ## APRESENTAÇÃO
 
 Nós acreditamos que o uso sustentável do solo para aplicações ambientais no Brasil exige o conhecimento da
-distribuição horizontal e vertical do conteúdo de ferro no solo. Por quê? Porque, em alguns locais, 
-***os óxidos de ferro podem perfazer até 80% da massa do solo***!
+distribuição horizontal e vertical do conteúdo de ferro no solo. Por quê? Porque, em alguns locais, os óxidos
+de ferro podem perfazer até 80% da massa do solo!
 
 Os óxidos de ferro são bem conhecidos por sua forte interação com a matéria orgânica do solo, influenciando 
 assim a quantidade de carbono que o solo consegue armazenar de forma estável. Os óxidos de ferro também são 
@@ -18,12 +18,21 @@ avançados de recomendação que assegurem o uso mais eficiente de fertilizantes
 políticas públicas de uso e ocupação do solo que respeitem as reais capacidades desse precioso e não-renovável
 bem natural.
 
+```{r, echo=FALSE}
+ds <- suppressMessages(googlesheets::gs_key("1Z0JwcmRRUDCyTB9yFlvHPsN6mCSQPzSczIOv88SPtcw", verbose = FALSE))
+ds <- suppressMessages(googlesheets::gs_read_csv(ds, verbose = FALSE))
+```
+
 Foi pensando na necessidade de impulsionar o avanço do conhecimento para o uso sustentável do solo brasileiro 
 que decidimos desenvolver um projeto inovador. O objetivo: a construção colaborativa de um repositório de 
-dados de ferro do solo que fosse de caráter centralizado, público, gratuito e com cobertura nacional. Lançado 
-em dezembro de 2016, o ***Repositório Brasileiro de Dados de Ferro do Solo*** (Fe-BR) conta com dezenas de 
-conjuntos de dados das diversas regiões do Brasil. Boa parte deles já está [aqui](data.html), à sua inteira
-disposição. [Contribua](contribute.html) você também!
+dados de ferro do solo com cobertura nacional que fosse público, gratuito e, sobretudo, fácil de usar e manter.
+Lançado em dezembro de 2016, o Repositório Brasileiro de Dados de Ferro do Solo (**Fe-BR**) já conta com a
+impressionante [soma](https://goo.gl/tVC8dH) de `r nrow(ds)` conjuntos de dados oriundos de todas as vinte e 
+sete unidades federativas do Brasil. Muitos dos conjuntos de dados já foram processados e estão 
+[aqui](data.html), à sua inteira disposição, esperando para serem usados. [Contribua](contribute.html) você 
+também!
+
+<br>
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 # Retornar o nome dos arquivos contendo as coordenadas das contribuições. Por padrão, o nome dos arquivos 
@@ -36,8 +45,9 @@ sp::coordinates(febr) <- c("coord_x", "coord_y")
 sp::proj4string(febr) <- sp::CRS("+init=epsg:4326")
 ```
 
-```{r echo=FALSE}
+```{r echo=FALSE, fig.width=9, fig.height=7}
 mapview::mapview(
   febr, label = febr$observacao_id, popup = paste(febr$sharing, "<br>", febr$mailto, sep = ""),
-  col.regions = "dodgerblue", lwd = 0, cex = 3)@map
+  # col.regions = "dodgerblue",
+  col.regions = "firebrick1", lwd = 1, col = "ivory")@map
 ```
