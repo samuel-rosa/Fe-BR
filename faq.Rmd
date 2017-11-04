@@ -102,6 +102,7 @@ Sim, você pode. Qualquer tipo de dado de conteúdo de ferro do solo pode ser su
 
 Não, você não pode. Os dados do projeto RADAMBRASIL e similares já estão em domínio público, tendo sido quase completamente incluídos nas bases de dados das instituições responsáveis como EMBRAPA e IBGE. O acesso a essas bases de dados é feito diretamente pela nossa equipe. A exceção são os casos em que for comprovado que um determinado conjunto de dados ainda não está disponível nessas bases de dados.
 
+<!--
 ## Posso submeter dados com qualquer tipo de licença de uso?
 
 Não, você não pode. Somente são aceitas licenças de uso não-restritivas, que permitem a redistribuição,
@@ -116,6 +117,7 @@ do conjunto de dados submetido devem atribuir o devido crédito ao autor da cria
 
 Mais informações sobre as licenças podem ser encontradas na página do 
 [Creative Commons](https://br.creativecommons.org/licencas/).
+-->
 
 ## O que será feito com os dados submetidos?
 
